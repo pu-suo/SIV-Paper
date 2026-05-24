@@ -1,0 +1,1036 @@
+{
+  "1": [
+    {
+      "premise_id": "P0016",
+      "stratum": 1,
+      "canonical_fol": "(Building(blakeMcFallCompanyBuilding) & AddedToIn(blakeMcFallCompanyBuilding, theNationalRegisterOfHistoricPlaces, year1990))",
+      "gold_fol": "Building(blakeMcFallCompanyBuilding) \u2227 AddedToIn(blakeMcFallCompanyBuilding, theNationalRegisterOfHistoricPlaces, year1990)",
+      "gold_nl": "The Blake McFall Company Building is a building added to the National Register of Historic Places in 1990.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0066",
+      "stratum": 1,
+      "canonical_fol": "Use(sam, mac)",
+      "gold_fol": "Use(sam, mac)",
+      "gold_nl": "Sam is using a Mac.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0079",
+      "stratum": 1,
+      "canonical_fol": "UnincorporatedCommunity(ordinary)",
+      "gold_fol": "UnincorporatedCommunity(ordinary)",
+      "gold_nl": "Ordinary is an unincorporated community.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0087",
+      "stratum": 1,
+      "canonical_fol": "(At(susan, event) & (HarvardStudent(susan) -> YoungAdult(susan)))",
+      "gold_fol": "At(susan, event) \u2227 (HarvardStudent(susan) \u2192 YoungAdult(susan))",
+      "gold_nl": "Susan is at the event, and if Susan is a Harvard student, then she is a young adult.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0089",
+      "stratum": 1,
+      "canonical_fol": "(Play(vicDicara, guitar) & Play(vicDicara, bass))",
+      "gold_fol": "Play(vicDicara, guitar) \u2227 Play(vicDicara, bass)",
+      "gold_nl": "Vic DiCara plays guitar and bass.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0304",
+      "stratum": 1,
+      "canonical_fol": "LocatedIn(northAmerica, westernHemisphere)",
+      "gold_fol": "LocatedIn(northAmerica, westernHemisphere)",
+      "gold_nl": "North America is in the western hemisphere of the earth.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0311",
+      "stratum": 1,
+      "canonical_fol": "(American(westworld) & ScienceFictionThriller(westworld))",
+      "gold_fol": "American(westworld) \u2227 ScienceFictionThriller(westworld)",
+      "gold_nl": "Westworld is an American science fiction-thriller TV series.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0312",
+      "stratum": 1,
+      "canonical_fol": "(Debut(westworld, year2016) & TvSeries(westworld))",
+      "gold_fol": "Debut(westworld, year2016) \u2227 TvSeries(westworld)",
+      "gold_nl": "In 2016, a television series named Westworld debuted on HBO.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0316",
+      "stratum": 1,
+      "canonical_fol": "(SecondSummerOlympicsGames(2008SummerOlympics) & BeHeldIn(2008SummerOlympics, communistState))",
+      "gold_fol": "SecondSummerOlympicsGames(2008SummerOlympics) \u2227 BeHeldIn(2008SummerOlympics, communistState)",
+      "gold_nl": "The 2008 Summer Olympics was the second Summer Olympic Games held in a communist state.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0322",
+      "stratum": 1,
+      "canonical_fol": "-(DistrictIn(yangshuo, guilin))",
+      "gold_fol": "\u00acDistrictIn(yangshuo, guilin)",
+      "gold_nl": "Yangshuo is not a district in Guilin.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0384",
+      "stratum": 1,
+      "canonical_fol": "(FrenchTelevision(videoGag) & AirWeekly(videoGag))",
+      "gold_fol": "FrenchTelevision(videoGag) \u2227 AirWeekly(videoGag)",
+      "gold_nl": "Video Gag is a French television series that airs weekly.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0473",
+      "stratum": 1,
+      "canonical_fol": "((Has(james, criminalRecord) & -(Taxpayer(james))) | (-(Has(james, criminalRecord)) & Taxpayer(james)))",
+      "gold_fol": "Has(james, criminalRecord) \u2295 Taxpayer(james)",
+      "gold_nl": "James either has a criminal record, or pays his taxes.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0512",
+      "stratum": 1,
+      "canonical_fol": "(FormerSwimmer(barbaraAnnMarshall) & FormerWorldRecordHolder(barbaraAnnMarshall))",
+      "gold_fol": "FormerSwimmer(barbaraAnnMarshall) \u2227 FormerWorldRecordHolder(barbaraAnnMarshall)",
+      "gold_nl": "Barbara Ann Marshall is a former swimmer and former world record-holder.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0517",
+      "stratum": 1,
+      "canonical_fol": "-(ParticipatedIn(barbaraAnnMarshall, finalHeatFreestyleRelay))",
+      "gold_fol": "\u00acParticipatedIn(barbaraAnnMarshall, finalHeatFreestyleRelay)",
+      "gold_nl": "Barbara Ann Marshall did not participate in the event final of the 1972 Summer Olympics freestyle relay.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0631",
+      "stratum": 1,
+      "canonical_fol": "(InThisMidwestTown(manny) & -(((Have(manny, horseRanch) & -(LiveIn(manny, crampedBuilding))) | (-(Have(manny, horseRanch)) & LiveIn(manny, crampedBuilding)))))",
+      "gold_fol": "InThisMidwestTown(manny) \u2227 \u00ac(Have(manny, horseRanch) \u2295 LiveIn(manny, crampedBuilding))",
+      "gold_nl": "Manny is in this midwest town, and she either has a horse ranch and lives in a cramped residential building, or she does neither.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0719",
+      "stratum": 1,
+      "canonical_fol": "BornIn(bernardaBrysonShahn, athensOhio)",
+      "gold_fol": "BornIn(bernardaBrysonShahn, athensOhio)",
+      "gold_nl": "Bernarda Bryson Shahn was born in Athens, Ohio.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0734",
+      "stratum": 1,
+      "canonical_fol": "(Teacher(nancy) -> OnPayroll(nancy))",
+      "gold_fol": "Teacher(nancy) \u2192 OnPayroll(nancy)",
+      "gold_nl": "If Nancy is a teacher, then they are on the payroll.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0736",
+      "stratum": 1,
+      "canonical_fol": "Teach(nancy, student)",
+      "gold_fol": "Teach(nancy, student)",
+      "gold_nl": "Nancy teaches students.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0744",
+      "stratum": 1,
+      "canonical_fol": "(Prereq(cpsc201, cpsc323) & Prereq(cpsc223, cpsc323))",
+      "gold_fol": "Prereq(cpsc201, cpsc323) \u2227 Prereq(cpsc223, cpsc323)",
+      "gold_nl": "CPSC 201 and CPSC 223 are prerequisites for CPSC 323.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0797",
+      "stratum": 1,
+      "canonical_fol": "American(monhoff)",
+      "gold_fol": "American(monhoff)",
+      "gold_nl": "Frederick Monhoff was an American.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0819",
+      "stratum": 1,
+      "canonical_fol": "Designed(nash, oxfordCircus)",
+      "gold_fol": "Designed(nash, oxfordCircus)",
+      "gold_nl": "John Nash designed Oxford Circus.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0908",
+      "stratum": 1,
+      "canonical_fol": "(Milanese(carrozzeriaColli) & CoachBuilder(carrozzeriaColli) & Company(carrozzeriaColli) & EstablishedBy(carrozzeriaColli, giuseppeColli) & EstablishedIn(carrozzeriaColli, 1931))",
+      "gold_fol": "Milanese(carrozzeriaColli) \u2227 CoachBuilder(carrozzeriaColli) \u2227 Company(carrozzeriaColli) \u2227 EstablishedBy(carrozzeriaColli, giuseppeColli) \u2227 EstablishedIn(carrozzeriaColli, 1931)",
+      "gold_nl": "Carrozzeria Colli is a Milanese coachbuilder company established by Giuseppe Colli in 1931.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0915",
+      "stratum": 1,
+      "canonical_fol": "((GoTo(john, theCinema) & GoTo(john, today)) <-> (On(ironman) & -(Bad(weather, today))))",
+      "gold_fol": "(GoTo(john, theCinema) \u2227 GoTo(john, today)) \u2194 (On(ironman) \u2227 \u00acBad(weather, today))",
+      "gold_nl": "Jack will go to the cinema if and only if Iron Man is on and the weather is not bad today.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1107",
+      "stratum": 1,
+      "canonical_fol": "(Penguin(fido) | FlyOver(fido, vastDistance))",
+      "gold_fol": "Penguin(fido) \u2228 FlyOver(fido, vastDistance)",
+      "gold_nl": "Fido is a penguin, or flies over a vast distance.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1118",
+      "stratum": 1,
+      "canonical_fol": "(Painting(monaLisa) & TheWorldsBestKnown(monaLisa))",
+      "gold_fol": "Painting(monaLisa) \u2227 TheWorldsBestKnown(monaLisa)",
+      "gold_nl": "The Mona Lisa is a world's best-known painting.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1237",
+      "stratum": 1,
+      "canonical_fol": "(Scottish(brianWinter) & FootballReferee(brianWinter))",
+      "gold_fol": "Scottish(brianWinter) \u2227 FootballReferee(brianWinter)",
+      "gold_nl": "Brian Winter is a Scottish football referee.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1335",
+      "stratum": 1,
+      "canonical_fol": "(English(jackODell) & ToyInventor(jackODell))",
+      "gold_fol": "English(jackODell) \u2227 ToyInventor(jackODell)",
+      "gold_nl": "Jack Odell is an English toy inventor.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1347",
+      "stratum": 1,
+      "canonical_fol": "-(((Lawyer(mary) & -(TippedEmployee(mary))) | (-(Lawyer(mary)) & TippedEmployee(mary))))",
+      "gold_fol": "\u00ac(Lawyer(mary) \u2295 TippedEmployee(mary))",
+      "gold_nl": "Mary is not a lawyer or a tipped employee.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1410",
+      "stratum": 1,
+      "canonical_fol": "SongWriter(dan)",
+      "gold_fol": "SongWriter(dan)",
+      "gold_nl": "Dan is also a songwriter.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1597",
+      "stratum": 1,
+      "canonical_fol": "AdministrativeCenterOf(moscow, central)",
+      "gold_fol": "AdministrativeCenterOf(moscow, central)",
+      "gold_nl": "Moscow is the administrative center of the Central federal district.",
+      "source": "FOLIO"
+    }
+  ],
+  "2": [
+    {
+      "premise_id": "P0054",
+      "stratum": 2,
+      "canonical_fol": "all x.(Have(x, typeCPort) -> -(ProducedBefore(x, yr2010)))",
+      "gold_fol": "\u2200x (Have(x, typeCPort) \u2192 \u00acProducedBefore(x, yr2010))",
+      "gold_nl": "Monitors that have a type-c port were not made before 2010.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0105",
+      "stratum": 2,
+      "canonical_fol": "all x.(HighIncome(x) -> -(MeansToDestination(x, bus)))",
+      "gold_fol": "\u2200x (HighIncome(x) \u2192 \u00acMeansToDestination(x, bus))",
+      "gold_nl": "A person with a high income will not take a bus to their destination.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0133",
+      "stratum": 2,
+      "canonical_fol": "all x.(Camping(sarah, x) -> -(Borrow(sarah, car)))",
+      "gold_fol": "\u2200x (Camping(sarah, x) \u2192 \u00ac(Borrow(sarah, car)))",
+      "gold_nl": "Sarah never borrows a car to go camping.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0193",
+      "stratum": 2,
+      "canonical_fol": "all x.(Human(x) -> (CanSwim(x) | CanWalk(x)))",
+      "gold_fol": "\u2200x (Human(x) \u2192 (CanSwim(x) \u2228 CanWalk(x)))",
+      "gold_nl": "Humans can swim or walk.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0217",
+      "stratum": 2,
+      "canonical_fol": "all x.(Bird(x) -> -(Ectothermic(x)))",
+      "gold_fol": "\u2200x (Bird(x) \u2192 \u00acEctothermic(x))",
+      "gold_nl": "No birds are ectothermic.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0284",
+      "stratum": 2,
+      "canonical_fol": "all x.(Dirt(x) -> -(Animal(x)))",
+      "gold_fol": "\u2200x (Dirt(x) \u2192 \u00acAnimal(x))",
+      "gold_nl": "Dirt is not an animal.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0381",
+      "stratum": 2,
+      "canonical_fol": "all x.(SharpDecreasesInExport(x) -> -(StongNationalCurrency(x)))",
+      "gold_fol": "\u2200x (SharpDecreasesInExport(x) \u2192 \u00acStongNationalCurrency(x))",
+      "gold_nl": "If exports fall sharply, this country's national currency cannot be strong.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0413",
+      "stratum": 2,
+      "canonical_fol": "all x.(Echidnas(x) -> -(Hyrax(x)))",
+      "gold_fol": "\u2200x (Echidnas(x) \u2192 \u00acHyrax(x))",
+      "gold_nl": "Echidnas are not hyrax.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0415",
+      "stratum": 2,
+      "canonical_fol": "all x.(Animal(x) -> (Vertebrate(x) | Invertebrate(x)))",
+      "gold_fol": "\u2200x (Animal(x) \u2192 (Vertebrate(x) \u2228 Invertebrate(x)))",
+      "gold_nl": "All animals are either vertebrates or invertebrates.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0458",
+      "stratum": 2,
+      "canonical_fol": "all x.(EnrolledIn(x, academicProgram) -> -(Work(x, fullTime)))",
+      "gold_fol": "\u2200x (EnrolledIn(x, academicProgram) \u2192 \u00acWork(x, fullTime))",
+      "gold_nl": "Those who are enrolled in an academic program can not work full-time.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0606",
+      "stratum": 2,
+      "canonical_fol": "all x.(LoudCar(x) -> -(ElectricCar(x)))",
+      "gold_fol": "\u2200x (LoudCar(x) \u2192 \u00acElectricCar(x))",
+      "gold_nl": "No loud cars are electric.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0610",
+      "stratum": 2,
+      "canonical_fol": "all x.(Plant(x) -> -(CuteAnimal(x)))",
+      "gold_fol": "\u2200x (Plant(x) \u2192 \u00acCuteAnimal(x))",
+      "gold_nl": "If something is a plant, then it is not a cute animal. Simeng: All plants are not cute animals.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0615",
+      "stratum": 2,
+      "canonical_fol": "exists x.(Send(guam, athlete, calgaryWinterOlympics))",
+      "gold_fol": "\u2203x (Send(guam, athlete, calgaryWinterOlympics))",
+      "gold_nl": "Guam sent an athlete to the Calgary Winter Olympics.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0641",
+      "stratum": 2,
+      "canonical_fol": "exists x.((Volunteer(x) -> Trained(x)))",
+      "gold_fol": "\u2203x (Volunteer(x) \u2192 Trained(x))",
+      "gold_nl": "Some volunteers are trained.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0756",
+      "stratum": 2,
+      "canonical_fol": "all x.(SportsCar(x) -> -(IntendedToBeDrivenAt(x, moderateSpeed)))",
+      "gold_fol": "\u2200x (SportsCar(x) \u2192 \u00acIntendedToBeDrivenAt(x, moderateSpeed))",
+      "gold_nl": "No sports cars are vehicles intended to be driven at moderate speeds.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0891",
+      "stratum": 2,
+      "canonical_fol": "all x.(IPhone(x) -> -(StandaloneDesktop(x)))",
+      "gold_fol": "\u2200x (IPhone(x) \u2192 \u00acStandaloneDesktop(x))",
+      "gold_nl": "No iPhones are standalone desktops.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0906",
+      "stratum": 2,
+      "canonical_fol": "all x.(In(x, chrysomelidaeFamily) -> -(Moth(x)))",
+      "gold_fol": "\u2200x (In(x, chrysomelidaeFamily) \u2192 \u00acMoth(x))",
+      "gold_nl": "There are no moths within the Chrysomelidae family.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1016",
+      "stratum": 2,
+      "canonical_fol": "all x.(LinearFunction(x) -> -(NonConvexFunction(x)))",
+      "gold_fol": "\u2200x (LinearFunction(x) \u2192 \u00acNonConvexFunction(x))",
+      "gold_nl": "No linear functions are non-convex functions.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1087",
+      "stratum": 2,
+      "canonical_fol": "all x.(((Hire(x, maid) | Hire(x, cleaningService)) -> Have(x, tidyHouse)))",
+      "gold_fol": "\u2200x (Hire(x, maid) \u2228 Hire(x, cleaningService) \u2192 Have(x, tidyHouse))",
+      "gold_nl": "If people hire a maid or cleaning service, then they have tidy houses.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1121",
+      "stratum": 2,
+      "canonical_fol": "all x.(Painting(x) -> (History(x) | Portrait(x) | Animal(x) | Landscape(x) | StillLife(x)))",
+      "gold_fol": "\u2200x (Painting(x) \u2192 (History(x) \u2228 Portrait(x) \u2228 Animal(x) \u2228 Landscape(x) \u2228 StillLife(x)))",
+      "gold_nl": "Painting genres can be history, portrait, animal, landscape, and still life.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1122",
+      "stratum": 2,
+      "canonical_fol": "all x.(ProfessionalTennisUmpire(x) -> -(ProfessionalTennisPlayer(x)))",
+      "gold_fol": "\u2200x (ProfessionalTennisUmpire(x) \u2192 \u00acProfessionalTennisPlayer(x))",
+      "gold_nl": "No professional tennis umpires are professional tennis players.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1200",
+      "stratum": 2,
+      "canonical_fol": "all x.(Unproductive(x) -> -(Energetic(x)))",
+      "gold_fol": "\u2200x (Unproductive(x) \u2192 \u00acEnergetic(x))",
+      "gold_nl": "No one unproductive is energetic.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1204",
+      "stratum": 2,
+      "canonical_fol": "all x.(EuropeanSoccerClub(x) -> (Attend(x, ucl) | Attend(x, uel) | Attend(x, uecl)))",
+      "gold_fol": "\u2200x (EuropeanSoccerClub(x) \u2192 Attend(x, ucl) \u2228 Attend(x, uel) \u2228 Attend(x, uecl))",
+      "gold_nl": "European soccer clubs can attend UCL, UEL, and UECL.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1343",
+      "stratum": 2,
+      "canonical_fol": "all x.(TippedEmployee(x) -> -(EntitledTo(x, federalMinimumWage)))",
+      "gold_fol": "\u2200x (TippedEmployee(x) \u2192 \u00acEntitledTo(x, federalMinimumWage))",
+      "gold_nl": "Tipped employees are not entitled to be paid the federal minimum wage by their employees.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1418",
+      "stratum": 2,
+      "canonical_fol": "all x.(CanDistinguishFrom(x, truth, falsehood) -> -(MorallyPerfect(x)))",
+      "gold_fol": "\u2200x (CanDistinguishFrom(x, truth, falsehood) \u2192 \u00acMorallyPerfect(x))",
+      "gold_nl": "Nobody who can distinguish truth from falsehood is morally perfect.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1426",
+      "stratum": 2,
+      "canonical_fol": "all x.(Product(x) -> -(Perfect(x)))",
+      "gold_fol": "\u2200x (Product(x) \u2192 \u00acPerfect(x))",
+      "gold_nl": "No products are perfect.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1513",
+      "stratum": 2,
+      "canonical_fol": "all x.(SandwichCookie(x) -> -(Healthy(x)))",
+      "gold_fol": "\u2200x (SandwichCookie(x) \u2192 \u00acHealthy(x))",
+      "gold_nl": "No sandwich cookies are healthy.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1515",
+      "stratum": 2,
+      "canonical_fol": "all x.(Animal(x) -> -(Plant(x)))",
+      "gold_fol": "\u2200x (Animal(x) \u2192 \u00acPlant(x))",
+      "gold_nl": "No animals are plants.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1530",
+      "stratum": 2,
+      "canonical_fol": "all x.(WelterWeight(x) -> -(HeavyWeight(x)))",
+      "gold_fol": "\u2200x (WelterWeight(x) \u2192 \u00ac HeavyWeight(x))",
+      "gold_nl": "Heavy weights are not welterweights.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1567",
+      "stratum": 2,
+      "canonical_fol": "all x.(InjuredAt(x, uFCFightNight) -> -(FightIn(x, uFCFightNight)))",
+      "gold_fol": "\u2200x (InjuredAt(x, uFCFightNight) \u2192 \u00acFightIn(x, uFCFightNight))",
+      "gold_nl": "People injured at UFC Fight Night did not fight.",
+      "source": "FOLIO"
+    }
+  ],
+  "3": [
+    {
+      "premise_id": "P0154",
+      "stratum": 3,
+      "canonical_fol": "all x.(Kid(x) -> Young(x))",
+      "gold_fol": "\u2200x (Kid(x) \u2192 Young(x))",
+      "gold_nl": "All kids are young.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0244",
+      "stratum": 3,
+      "canonical_fol": "all x.(FolkSong(x) -> Song(x))",
+      "gold_fol": "\u2200x (FolkSong(x) \u2192 Song(x))",
+      "gold_nl": "All folk songs are songs.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0246",
+      "stratum": 3,
+      "canonical_fol": "all x.(Movie(x) -> Video(x))",
+      "gold_fol": "\u2200x (Movie(x) \u2192 Video(x))",
+      "gold_nl": "All movies are videos.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0290",
+      "stratum": 3,
+      "canonical_fol": "all x.(InChemicalEndangerment(x) -> Harmful(x))",
+      "gold_fol": "\u2200x (InChemicalEndangerment(x) \u2192 Harmful(x))",
+      "gold_nl": "Chemical Endangerment is harmful.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0301",
+      "stratum": 3,
+      "canonical_fol": "all x.(Program(x) -> Prerecorded(x))",
+      "gold_fol": "\u2200x (Program(x) \u2192 Prerecorded(x))",
+      "gold_nl": "Programs are pre-recorded.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0358",
+      "stratum": 3,
+      "canonical_fol": "all x.(ThinkMadeUp(x, santaClaus) -> WouldBeSurprisedToSeeIn(x, santaClaus, house))",
+      "gold_fol": "\u2200x (ThinkMadeUp(x, santaClaus) \u2192 WouldBeSurprisedToSeeIn(x, santaClaus, house))",
+      "gold_nl": "People who think Santa Claus is made up, then they would be surprised to see him in their house.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0389",
+      "stratum": 3,
+      "canonical_fol": "all x.(Cellphone(x) -> Phone(x))",
+      "gold_fol": "\u2200x (Cellphone(x) \u2192 Phone(x))",
+      "gold_nl": "All cell phones are phones.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0390",
+      "stratum": 3,
+      "canonical_fol": "all x.(Iphone(x) -> Cellphone(x))",
+      "gold_fol": "\u2200x (Iphone(x) \u2192 Cellphone(x))",
+      "gold_nl": "All iPhones are cell phones.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0469",
+      "stratum": 3,
+      "canonical_fol": "all x.(ServesIn(x, theArmy) -> WorkFor(x, governmentAgency))",
+      "gold_fol": "\u2200x (ServesIn(x, theArmy) \u2192 WorkFor(x, governmentAgency))",
+      "gold_nl": "Everyone in the army is an employee of a government department.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0552",
+      "stratum": 3,
+      "canonical_fol": "all x.(EntitledTo(x, nationalSocialInsuranceCoverage) -> CanHavePartiallyCovered(x, medicalBills))",
+      "gold_fol": "\u2200x (EntitledTo(x, nationalSocialInsuranceCoverage) \u2192 CanHavePartiallyCovered(x, medicalBills))",
+      "gold_nl": "Everyone who is entitled to national social insurance coverage can have their medical bills partially covered.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0589",
+      "stratum": 3,
+      "canonical_fol": "all x.(Essayist(x) -> Writer(x))",
+      "gold_fol": "\u2200x (Essayist(x) \u2192 Writer(x))",
+      "gold_nl": "Every essayist is a writer.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0594",
+      "stratum": 3,
+      "canonical_fol": "all x.(GraduateStudent(x) -> Student(x))",
+      "gold_fol": "\u2200x (GraduateStudent(x) \u2192 Student(x))",
+      "gold_nl": "All graduate students are students.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0713",
+      "stratum": 3,
+      "canonical_fol": "all x.(PoolManager(x) -> Lifeguard(x))",
+      "gold_fol": "\u2200x (PoolManager(x) \u2192 Lifeguard(x))",
+      "gold_nl": "All pool managers are lifeguards.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0804",
+      "stratum": 3,
+      "canonical_fol": "all x.(Laptop(x) -> Computer(x))",
+      "gold_fol": "\u2200x (Laptop(x) \u2192 Computer(x))",
+      "gold_nl": "A laptop is a computer.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0851",
+      "stratum": 3,
+      "canonical_fol": "all x.(NonProstateCancer(x) -> Cancer(x))",
+      "gold_fol": "\u2200x (NonProstateCancer(x) \u2192 Cancer(x))",
+      "gold_nl": "All non-prostate cancers are a type of cancer.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0970",
+      "stratum": 3,
+      "canonical_fol": "all x.(Edible(x) -> Food(x))",
+      "gold_fol": "\u2200x (Edible(x) \u2192 Food(x))",
+      "gold_nl": "All edible things are food.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1018",
+      "stratum": 3,
+      "canonical_fol": "all x.(QuasiConvexFunction(x) -> RealValuedFunction(x))",
+      "gold_fol": "\u2200x (QuasiConvexFunction(x) \u2192 RealValuedFunction(x))",
+      "gold_nl": "All quasi-convex functions are real-valued functions.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1019",
+      "stratum": 3,
+      "canonical_fol": "all x.(ConvexFunction(x) -> QuasiConvexFunction(x))",
+      "gold_fol": "\u2200x (ConvexFunction(x) \u2192 QuasiConvexFunction(x))",
+      "gold_nl": "All convex functions are quasi-convex functions.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1068",
+      "stratum": 3,
+      "canonical_fol": "all x.(PrimeNumber(x) -> NaturalNumber(x))",
+      "gold_fol": "\u2200x (PrimeNumber(x) \u2192 NaturalNumber(x))",
+      "gold_nl": "All prime numbers are natural numbers.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1083",
+      "stratum": 3,
+      "canonical_fol": "all x.(RareEarthElement(x) -> EssentialFor(x, electronics))",
+      "gold_fol": "\u2200x (RareEarthElement(x) \u2192 EssentialFor(x, electronics))",
+      "gold_nl": "All rare earth elements are essential for exploring future directions of electronics.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1103",
+      "stratum": 3,
+      "canonical_fol": "all x.(FlyOver(x, vastDistance) -> GlideInAir(x))",
+      "gold_fol": "\u2200x (FlyOver(x, vastDistance) \u2192 GlideInAir(x))",
+      "gold_nl": "Those who can fly over a vast distance glide in the air.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1108",
+      "stratum": 3,
+      "canonical_fol": "all x.(MemberOf(x, universityFaculty) -> Professor(x))",
+      "gold_fol": "\u2200x (MemberOf(x, universityFaculty) \u2192 Professor(x))",
+      "gold_nl": "All members of the university faculty are professors.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1109",
+      "stratum": 3,
+      "canonical_fol": "all x.(PrincipalInvestigator(x) -> MemberOf(x, universityFaculty))",
+      "gold_fol": "\u2200x (PrincipalInvestigator(x) \u2192 MemberOf(x, universityFaculty))",
+      "gold_nl": "All principal investigators are members of the university faculty.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1124",
+      "stratum": 3,
+      "canonical_fol": "all x.(GrandSlamChampion(x) -> WorldTourPlayer(x))",
+      "gold_fol": "\u2200x (GrandSlamChampion(x) \u2192 WorldTourPlayer(x))",
+      "gold_nl": "All Grand Slam champions are World Tour players.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1155",
+      "stratum": 3,
+      "canonical_fol": "all x.(From(x, china) -> From(x, bric))",
+      "gold_fol": "\u2200x (From(x, china) \u2192 From(x, bric))",
+      "gold_nl": "If someone is from China, then they are from a country of BRICS.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1309",
+      "stratum": 3,
+      "canonical_fol": "all x.(AttendInPerson(x) -> Registered(x))",
+      "gold_fol": "\u2200x (AttendInPerson(x) \u2192 Registered(x))",
+      "gold_nl": "All students who attend in person have registered for the conference.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1324",
+      "stratum": 3,
+      "canonical_fol": "all x.(British(x) -> European(x))",
+      "gold_fol": "\u2200x (British(x) \u2192 European(x))",
+      "gold_nl": "A British is a European.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1427",
+      "stratum": 3,
+      "canonical_fol": "all x.(Dress(x) -> Clothes(x))",
+      "gold_fol": "\u2200x (Dress(x) \u2192 Clothes(x))",
+      "gold_nl": "All dresses are clothes.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1587",
+      "stratum": 3,
+      "canonical_fol": "all x.(SubscribedTo(x, aMCAList) -> EligibleForThreeFreeMovies(x))",
+      "gold_fol": "\u2200x (SubscribedTo(x, aMCAList) \u2192 EligibleForThreeFreeMovies(x))",
+      "gold_nl": "If a customer subscribes to AMC A-List, then he/she can watch 3 movies every week without any additional fees.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1660",
+      "stratum": 3,
+      "canonical_fol": "all x.(EatALot(x) -> Need(x, largeTerritory))",
+      "gold_fol": "\u2200x (EatALot(x) \u2192 Need(x, largeTerritory))",
+      "gold_nl": "Every animal that eats a lot needs a large territory.",
+      "source": "FOLIO"
+    }
+  ],
+  "4": [
+    {
+      "premise_id": "P0048",
+      "stratum": 4,
+      "canonical_fol": "exists x.(exists y.((Fish(x) -> Sting(x, y))))",
+      "gold_fol": "\u2203x \u2203y (Fish(x) \u2192 Sting(x,y))",
+      "gold_nl": "Some fish stings people.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0135",
+      "stratum": 4,
+      "canonical_fol": "all x.(all y.(Camping(x, y) -> GoTo(x, y)))",
+      "gold_fol": "\u2200x \u2200y (Camping(x, y) \u2192 GoTo(x, y))",
+      "gold_nl": "To go camping somewhere, you must go to that place.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0161",
+      "stratum": 4,
+      "canonical_fol": "all x.(all y.(DirectedBy(x, y) -> Filmmaker(y)))",
+      "gold_fol": "\u2200x \u2200y (DirectedBy(x, y) \u2192 Filmmaker(y))",
+      "gold_nl": "If a film is directed by a person, the person is a filmmaker.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0186",
+      "stratum": 4,
+      "canonical_fol": "all x.(all y.(PlayIn(y, x, concert) -> GoodAtPlaying(y, x)))",
+      "gold_fol": "\u2200x \u2200y (PlayIn(y, x, concert) \u2192 GoodAtPlaying(y, x))",
+      "gold_nl": "If a person plays an instrument in a concert, they are good at playing this kind of instrument.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1013",
+      "stratum": 4,
+      "canonical_fol": "all x.(exists y.(Peak(x, y)) -> Popular(x))",
+      "gold_fol": "\u2200x ((\u2203y(Peak(x, y))) \u2192 Popular(x))",
+      "gold_nl": "If a song peaked at No.1 at a particular place, it was extremely popular.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1174",
+      "stratum": 4,
+      "canonical_fol": "all x.(all y.(RunUnopposedFor(x, philadelphiaCityCouncil, y) -> ElectedTo(x, philadelphiaCityCouncil, y)))",
+      "gold_fol": "\u2200x \u2200y (RunUnopposedFor(x, philadelphiaCityCouncil, y) \u2192 ElectedTo(x, philadelphiaCityCouncil, y))",
+      "gold_nl": "People who run unopposed for the Philadelphia City Council are elected to the positions they run for in the same year.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1366",
+      "stratum": 4,
+      "canonical_fol": "all x.(all y.(StateOf(x, y) -> In(x, y)))",
+      "gold_fol": "\u2200x \u2200y (StateOf(x, y) \u2192 In(x, y))",
+      "gold_nl": "All states are in their country.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1411",
+      "stratum": 4,
+      "canonical_fol": "all x.(all y.(LeadSinger(x, y) -> Singer(y)))",
+      "gold_fol": "\u2200x \u2200y (LeadSinger(x, y) \u2192 Singer(y))",
+      "gold_nl": "All lead singers are singers.",
+      "source": "FOLIO"
+    }
+  ],
+  "5": [
+    {
+      "premise_id": "P0064",
+      "stratum": 5,
+      "canonical_fol": "all x.(Project(x) -> ((WrittenIn(x, cplusplus) & -(WrittenIn(x, python))) | (-(WrittenIn(x, cplusplus)) & WrittenIn(x, python))))",
+      "gold_fol": "\u2200x (Project(x) \u2192 (WrittenIn(x, cplusplus) \u2295 WrittenIn(x, python)))",
+      "gold_nl": "A project is written either in C++ or Python.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0083",
+      "stratum": 5,
+      "canonical_fol": "all x.((At(x, event) & CollegeStudent(x)) -> YoungAdult(x))",
+      "gold_fol": "\u2200x (At(x, event) \u2227 CollegeStudent(x) \u2192 YoungAdult(x))",
+      "gold_nl": "All college students at the event are young adults.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0099",
+      "stratum": 5,
+      "canonical_fol": "all x.((GrownIn(x, benSYard) & Is(x, apple)) -> RedFruit(x))",
+      "gold_fol": "\u2200x (GrownIn(x, benSYard) \u2227 Is(x, apple) \u2192 RedFruit(x))",
+      "gold_nl": "All apples that grow in Ben's yard are red fruits.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0264",
+      "stratum": 5,
+      "canonical_fol": "exists x.(exists y.(Street(y) & (Road(y) & Street(x) & Road(x) & -(x = y))))",
+      "gold_fol": "\u2203x \u2203y (Street(x) \u2227 Street(y) \u2227 Road(x) \u2227 Road(y) \u2227 \u00ac(x=y))",
+      "gold_nl": "Some streets are roads.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0268",
+      "stratum": 5,
+      "canonical_fol": "all x.((InBuisnessClass(x) & TravelingTo(x, seattle) & TravelingFrom(x, newYorkCity)) -> -(InFirstClass(x)))",
+      "gold_fol": "\u2200x (InBuisnessClass(x) \u2227 TravelingTo(x, seattle) \u2227 TravelingFrom(x, newYorkCity) \u2192 \u00acInFirstClass(x))",
+      "gold_nl": "People in business class from New York City to Seattle are not in first class.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0363",
+      "stratum": 5,
+      "canonical_fol": "all x.(exists y.(((In(indonesia) & Prosecutor(x) & SpecialCrime(y)) -> InvestigatePersonally(x, y))))",
+      "gold_fol": "\u2200x \u2203y (In(indonesia) \u2227 Prosecutor(x) \u2227 SpecialCrime(y) \u2192 InvestigatePersonally(x, y))",
+      "gold_nl": "In Indonesia, the prosecutor only personally investigates cases of some special crimes.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0387",
+      "stratum": 5,
+      "canonical_fol": "all x.((Video(x) & AirOn(videoGag, x)) -> In(x, french))",
+      "gold_fol": "\u2200x (Video(x) \u2227 AirOn(videoGag, x) \u2192 In(x, french))",
+      "gold_nl": "All videos aired on Video Gag are in French.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0445",
+      "stratum": 5,
+      "canonical_fol": "all x.((Baker(x) & CanMake(x, scrambledEggs)) -> CanMake(x, goodBreakfast))",
+      "gold_fol": "\u2200x ((Baker(x) \u2227 CanMake(x, scrambledEggs)) \u2192 CanMake(x, goodBreakfast))",
+      "gold_nl": "Bakers who can also make scrambled eggs can make a good breakfast.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0476",
+      "stratum": 5,
+      "canonical_fol": "all x.((Water(x) & In(x, crotonRiverWatershed)) -> FlowsTo(x, bronx))",
+      "gold_fol": "\u2200x ((Water(x) \u2227 In(x, crotonRiverWatershed)) \u2192 FlowsTo(x, bronx))",
+      "gold_nl": "Water from the Croton River watershed flows to the Bronx.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0480",
+      "stratum": 5,
+      "canonical_fol": "all x.(all y.(all z.((AlbumByBand(x, y) & RockBand(y, z)) -> Genre(x, rock))))",
+      "gold_fol": "\u2200x \u2200y \u2200z (AlbumByBand(x, y) \u2227 RockBand(y, z) \u2192 Genre(x, rock))",
+      "gold_nl": "If an album is written by a rock band, then the genre of the album is rock.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0496",
+      "stratum": 5,
+      "canonical_fol": "exists x.(Earthquake(x) & (StrikeInYr(x, year1999) & StrikeInMo(x, december) & StrikeInCity(x, luzon)))",
+      "gold_fol": "\u2203x (Earthquake(x) \u2227 StrikeInYr(x, year1999) \u2227 StrikeInMo(x, december) \u2227 StrikeInCity(x, luzon))",
+      "gold_nl": "In December 1999, an earthquake struck Luzon.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0623",
+      "stratum": 5,
+      "canonical_fol": "exists x.(Reading(x) & Homework(x))",
+      "gold_fol": "\u2203x (Reading(x) \u2227 Homework(x))",
+      "gold_nl": "Some reading is homework.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0706",
+      "stratum": 5,
+      "canonical_fol": "all x.((In(x, thisNeighborhood) & BusyWith(x, 12HourWorkHour)) -> MakeAtUsing(x, home, ownFood, recipe))",
+      "gold_fol": "\u2200x (In(x, thisNeighborhood) \u2227 BusyWith(x, 12HourWorkHour) \u2192 MakeAtUsing(x, home, ownFood, recipe))",
+      "gold_nl": "All people in this neighborhood who lead very busy lives that include 12-hour work hours make a lot of their own food at home using recipes and online guides.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0716",
+      "stratum": 5,
+      "canonical_fol": "exists x.(ArtPiece(x) & -Require(x, talent))",
+      "gold_fol": "\u2203x (ArtPiece(x) \u2227 \u00acRequire(x, talent))",
+      "gold_nl": "Not all art pieces require talent.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0823",
+      "stratum": 5,
+      "canonical_fol": "all x.((Dog(x) & In(x, myHouse)) -> Bark(x))",
+      "gold_fol": "\u2200x (Dog(x) \u2227 In(x, myHouse) \u2192 Bark(x))",
+      "gold_nl": "All the dogs in my house bark.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0910",
+      "stratum": 5,
+      "canonical_fol": "all x.((BuiltBy(x, carrozzeriaColli) & FirstAutomobile(x)) -> RacingCar(x))",
+      "gold_fol": "\u2200x (BuiltBy(x, carrozzeriaColli) \u2227 FirstAutomobile(x) \u2192 RacingCar(x))",
+      "gold_nl": "The first automobiles built by Carrozzeria Colli were racing cars.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0949",
+      "stratum": 5,
+      "canonical_fol": "all x.((Car(x) & MadeIn(x, maranello)) -> Carry(x, ferrariV12Engine))",
+      "gold_fol": "\u2200x ((Car(x) \u2227 MadeIn(x, maranello)) \u2192 Carry(x, ferrariV12Engine))",
+      "gold_nl": "All cars that are made in Maranello carry a Ferrari V12 engine.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0988",
+      "stratum": 5,
+      "canonical_fol": "all x.((Devices(x) & CanBeConnectedTo(x, wifi)) -> EasyToOperate(x))",
+      "gold_fol": "\u2200x ((Devices(x) \u2227 CanBeConnectedTo(x, wifi)) \u2192 EasyToOperate(x))",
+      "gold_nl": "All of the devices that connect to the company's wifi are easy to operate.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P0996",
+      "stratum": 5,
+      "canonical_fol": "exists x.(BabyElephant(x) & Sleepy(x))",
+      "gold_fol": "\u2203x (BabyElephant(x) \u2227 Sleepy(x))",
+      "gold_nl": "Some baby elephants are sleepy.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1148",
+      "stratum": 5,
+      "canonical_fol": "all x.((FootballPlayer(x) & European(x)) -> exists y.((Call(american, y, soccer) & Play(x, y))))",
+      "gold_fol": "\u2200x (FootballPlayer(x) \u2227 European(x) \u2192 \u2203y (Call(american, y, soccer) \u2227 Play(x, y)))",
+      "gold_nl": "If a European plays football, they play what Americans call soccer.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1180",
+      "stratum": 5,
+      "canonical_fol": "all x.(all y.(all z.(all w.((-(x = y) & WonCup(x, z) & WonCup(y, w)) -> -((z = w))))))",
+      "gold_fol": "\u2200x \u2200y \u2200z \u2200w (\u00ac(x=y) \u2227 WonCup(x, z) \u2227 WonCup(y, w) \u2192 \u00ac(z=w))",
+      "gold_nl": "Different teams cannot win the cup in the same year's final.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1265",
+      "stratum": 5,
+      "canonical_fol": "all x.((UsedIn(x, labComputer) & MacOS(x)) -> UnixOperatingSystem(x))",
+      "gold_fol": "\u2200x (UsedIn(x, labComputer) \u2227 MacOS(x) \u2192 UnixOperatingSystem(x))",
+      "gold_nl": "All versions of MacOS used in the lab computer are based on Unix operating systems.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1301",
+      "stratum": 5,
+      "canonical_fol": "all x.((EmployeeIn(x, jamesSTown) & WorkFor(x, thisCompany)) -> -(From(x, china)))",
+      "gold_fol": "\u2200x ((EmployeeIn(x, jamesSTown) \u2227 WorkFor(x, thisCompany)) \u2192 \u00acFrom(x, china))",
+      "gold_nl": "None of the employees in James's town who work for this company are from China.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1302",
+      "stratum": 5,
+      "canonical_fol": "all x.((EmployeeIn(x, jamesSTown) & WorkIn(x, softwareEngineering)) -> From(x, china))",
+      "gold_fol": "\u2200x (EmployeeIn(x, jamesSTown) \u2227 WorkIn(x, softwareEngineering) \u2192 From(x, china))",
+      "gold_nl": "All of the employees in James's town working in software engineering are from China.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1436",
+      "stratum": 5,
+      "canonical_fol": "all x.(Surprise(x) -> ((Fun(x) & -(Dreadful(x))) | (-(Fun(x)) & Dreadful(x))))",
+      "gold_fol": "\u2200x (Surprise(x) \u2192 (Fun(x) \u2295 Dreadful(x)))",
+      "gold_nl": "Surprises are either fun or dreadful.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1452",
+      "stratum": 5,
+      "canonical_fol": "exists x.(exists y.(Elephantopus(y) & (Elephantopus(x) & NativeTo(x, southeasternunitedstates) & -(x = y) & NativeTo(y, southeasternunitedstates))))",
+      "gold_fol": "\u2203x \u2203y (Elephantopus(x) \u2227 NativeTo(x, southeasternunitedstates) \u2227 (\u00ac(x=y)) \u2227 Elephantopus(y) \u2227 NativeTo(y, southeasternunitedstates))",
+      "gold_nl": "Several species of Elephantopus are native to the southeastern United States.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1560",
+      "stratum": 5,
+      "canonical_fol": "all x.(exists y.((Werewolf(x) -> ((BittenBy(x, y) | ScratchedBy(x, y)) & Werewolf(y)))))",
+      "gold_fol": "\u2200x \u2203y (Werewolf(x) \u2192 (BittenBy(x, y) \u2228 ScratchedBy(x, y)) \u2227 Werewolf(y))",
+      "gold_nl": "A werewolf has been scratched or bitten by another werewolf.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1572",
+      "stratum": 5,
+      "canonical_fol": "all x.((OnCounter(x) & AppleJuice(x)) -> Sweet(x))",
+      "gold_fol": "\u2200x (OnCounter(x) \u2227 AppleJuice(x) \u2192 Sweet(x))",
+      "gold_nl": "All apple juices on the counter are sweet.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1664",
+      "stratum": 5,
+      "canonical_fol": "all x.((ConvictedCriminal(x) & Innocent(x)) -> -(TrulyGuilty(x)))",
+      "gold_fol": "\u2200x (ConvictedCriminal(x) \u2227 Innocent(x) \u2192 \u00acTrulyGuilty(x))",
+      "gold_nl": "Any convicted criminal that is innocent is not truly guilty.",
+      "source": "FOLIO"
+    },
+    {
+      "premise_id": "P1665",
+      "stratum": 5,
+      "canonical_fol": "all x.((ConvictedCriminal(x) & -CommitCrime(x)) -> Innocent(x))",
+      "gold_fol": "\u2200x (ConvictedCriminal(x) \u2227 \u00acCommitCrime(x) \u2192 Innocent(x))",
+      "gold_nl": "All convicted criminals who did not commit a crime are truly innocent.",
+      "source": "FOLIO"
+    }
+  ]
+}

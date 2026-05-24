@@ -1,0 +1,1900 @@
+[
+  {
+    "sentence": "Miroslav Venhoda was a Czech choral conductor.",
+    "extraction": {
+      "nl": "Miroslav Venhoda was a Czech choral conductor.",
+      "predicates": [
+        {
+          "name": "CzechChoralConductor",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "miroslav",
+          "surface": "Miroslav Venhoda",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": {
+          "pred": "CzechChoralConductor",
+          "args": [
+            "miroslav"
+          ],
+          "negated": false
+        },
+        "quantification": null,
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "Alice taught Bob.",
+    "extraction": {
+      "nl": "Alice taught Bob.",
+      "predicates": [
+        {
+          "name": "Taught",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "alice",
+          "surface": "Alice",
+          "type": "entity"
+        },
+        {
+          "id": "bob",
+          "surface": "Bob",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": {
+          "pred": "Taught",
+          "args": [
+            "alice",
+            "bob"
+          ],
+          "negated": false
+        },
+        "quantification": null,
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "All dogs are mammals.",
+    "extraction": {
+      "nl": "All dogs are mammals.",
+      "predicates": [
+        {
+          "name": "Dog",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Mammal",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Dog",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": {
+              "pred": "Mammal",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "All employees who schedule meetings attend the company building.",
+    "extraction": {
+      "nl": "All employees who schedule meetings attend the company building.",
+      "predicates": [
+        {
+          "name": "Employee",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Meeting",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Schedule",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        },
+        {
+          "name": "CompanyBuilding",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Attend",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Employee",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "Schedule",
+              "args": [
+                "x",
+                "y"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "Meeting",
+              "args": [
+                "y"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": null,
+            "quantification": {
+              "quantifier": "existential",
+              "variable": "z",
+              "var_type": "entity",
+              "restrictor": [
+                {
+                  "pred": "CompanyBuilding",
+                  "args": [
+                    "z"
+                  ],
+                  "negated": false
+                }
+              ],
+              "nucleus": {
+                "atomic": {
+                  "pred": "Attend",
+                  "args": [
+                    "x",
+                    "z"
+                  ],
+                  "negated": false
+                },
+                "quantification": null,
+                "negation": null,
+                "connective": null,
+                "operands": null
+              },
+              "inner_quantifications": []
+            },
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": [
+            {
+              "quantifier": "existential",
+              "variable": "y",
+              "var_type": "entity"
+            }
+          ]
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "Some student read a book.",
+    "extraction": {
+      "nl": "Some student read a book.",
+      "predicates": [
+        {
+          "name": "Student",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Book",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Read",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "existential",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Student",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": null,
+            "quantification": {
+              "quantifier": "existential",
+              "variable": "y",
+              "var_type": "entity",
+              "restrictor": [
+                {
+                  "pred": "Book",
+                  "args": [
+                    "y"
+                  ],
+                  "negated": false
+                }
+              ],
+              "nucleus": {
+                "atomic": {
+                  "pred": "Read",
+                  "args": [
+                    "x",
+                    "y"
+                  ],
+                  "negated": false
+                },
+                "quantification": null,
+                "negation": null,
+                "connective": null,
+                "operands": null
+              },
+              "inner_quantifications": []
+            },
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "Every student who takes a class that is taught by a professor passes.",
+    "extraction": {
+      "nl": "Every student who takes a class that is taught by a professor passes.",
+      "predicates": [
+        {
+          "name": "Student",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Class",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Professor",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Takes",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        },
+        {
+          "name": "TaughtBy",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        },
+        {
+          "name": "Passes",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Student",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "Takes",
+              "args": [
+                "x",
+                "y"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "Class",
+              "args": [
+                "y"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "TaughtBy",
+              "args": [
+                "y",
+                "z"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "Professor",
+              "args": [
+                "z"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": {
+              "pred": "Passes",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": [
+            {
+              "quantifier": "existential",
+              "variable": "y",
+              "var_type": "entity"
+            },
+            {
+              "quantifier": "existential",
+              "variable": "z",
+              "var_type": "entity"
+            }
+          ]
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "No dog is a cat.",
+    "extraction": {
+      "nl": "No dog is a cat.",
+      "predicates": [
+        {
+          "name": "Dog",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Cat",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Dog",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": {
+              "pred": "Cat",
+              "args": [
+                "x"
+              ],
+              "negated": true
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "People in this club who chaperone high school dances are not students who attend the school.",
+    "extraction": {
+      "nl": "People in this club who chaperone high school dances are not students who attend the school.",
+      "predicates": [
+        {
+          "name": "Person",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "In",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        },
+        {
+          "name": "Chaperone",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        },
+        {
+          "name": "HighSchoolDance",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Student",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Attend",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "theClub",
+          "surface": "this club",
+          "type": "entity"
+        },
+        {
+          "id": "theSchool",
+          "surface": "the school",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Person",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "In",
+              "args": [
+                "x",
+                "theClub"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "Chaperone",
+              "args": [
+                "x",
+                "y"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "HighSchoolDance",
+              "args": [
+                "y"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": null,
+            "quantification": null,
+            "negation": {
+              "atomic": null,
+              "quantification": null,
+              "negation": null,
+              "connective": "and",
+              "operands": [
+                {
+                  "atomic": {
+                    "pred": "Student",
+                    "args": [
+                      "x"
+                    ],
+                    "negated": false
+                  },
+                  "quantification": null,
+                  "negation": null,
+                  "connective": null,
+                  "operands": null
+                },
+                {
+                  "atomic": {
+                    "pred": "Attend",
+                    "args": [
+                      "x",
+                      "theSchool"
+                    ],
+                    "negated": false
+                  },
+                  "quantification": null,
+                  "negation": null,
+                  "connective": null,
+                  "operands": null
+                }
+              ]
+            },
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": [
+            {
+              "quantifier": "existential",
+              "variable": "y",
+              "var_type": "entity"
+            }
+          ]
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "Only managers attend the meeting.",
+    "extraction": {
+      "nl": "Only managers attend the meeting.",
+      "predicates": [
+        {
+          "name": "Manager",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Attend",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "theMeeting",
+          "surface": "the meeting",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Attend",
+              "args": [
+                "x",
+                "theMeeting"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": {
+              "pred": "Manager",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "Alice is tall and Bob is short.",
+    "extraction": {
+      "nl": "Alice is tall and Bob is short.",
+      "predicates": [
+        {
+          "name": "Tall",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Short",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "alice",
+          "surface": "Alice",
+          "type": "entity"
+        },
+        {
+          "id": "bob",
+          "surface": "Bob",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": null,
+        "negation": null,
+        "connective": "and",
+        "operands": [
+          {
+            "atomic": {
+              "pred": "Tall",
+              "args": [
+                "alice"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          {
+            "atomic": {
+              "pred": "Short",
+              "args": [
+                "bob"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "sentence": "The L-2021 monitor is either used in the library or has a type-c port.",
+    "extraction": {
+      "nl": "The L-2021 monitor is either used in the library or has a type-c port.",
+      "predicates": [
+        {
+          "name": "UsedIn",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        },
+        {
+          "name": "HasTypeCPort",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "monitor",
+          "surface": "L-2021 monitor",
+          "type": "entity"
+        },
+        {
+          "id": "library",
+          "surface": "library",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": null,
+        "negation": null,
+        "connective": "or",
+        "operands": [
+          {
+            "atomic": {
+              "pred": "UsedIn",
+              "args": [
+                "monitor",
+                "library"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          {
+            "atomic": {
+              "pred": "HasTypeCPort",
+              "args": [
+                "monitor"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "sentence": "If it rains, the ground is wet.",
+    "extraction": {
+      "nl": "If it rains, the ground is wet.",
+      "predicates": [
+        {
+          "name": "Rains",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Wet",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "weather",
+          "surface": "weather",
+          "type": "entity"
+        },
+        {
+          "id": "ground",
+          "surface": "ground",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": null,
+        "negation": null,
+        "connective": "implies",
+        "operands": [
+          {
+            "atomic": {
+              "pred": "Rains",
+              "args": [
+                "weather"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          {
+            "atomic": {
+              "pred": "Wet",
+              "args": [
+                "ground"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "sentence": "Archie can walk if and only if he has functional brainstems.",
+    "extraction": {
+      "nl": "Archie can walk if and only if he has functional brainstems.",
+      "predicates": [
+        {
+          "name": "CanWalk",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "HasFunctionalBrainstems",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "archie",
+          "surface": "Archie",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": null,
+        "negation": null,
+        "connective": "iff",
+        "operands": [
+          {
+            "atomic": {
+              "pred": "CanWalk",
+              "args": [
+                "archie"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          {
+            "atomic": {
+              "pred": "HasFunctionalBrainstems",
+              "args": [
+                "archie"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "sentence": "If the forecast calls for rain, then all employees work from home.",
+    "extraction": {
+      "nl": "If the forecast calls for rain, then all employees work from home.",
+      "predicates": [
+        {
+          "name": "ForecastCallsFor",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        },
+        {
+          "name": "Employee",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "WorkFrom",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "weather",
+          "surface": "weather",
+          "type": "entity"
+        },
+        {
+          "id": "rain",
+          "surface": "rain",
+          "type": "entity"
+        },
+        {
+          "id": "home",
+          "surface": "home",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": null,
+        "negation": null,
+        "connective": "implies",
+        "operands": [
+          {
+            "atomic": {
+              "pred": "ForecastCallsFor",
+              "args": [
+                "weather",
+                "rain"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          {
+            "atomic": null,
+            "quantification": {
+              "quantifier": "universal",
+              "variable": "x",
+              "var_type": "entity",
+              "restrictor": [
+                {
+                  "pred": "Employee",
+                  "args": [
+                    "x"
+                  ],
+                  "negated": false
+                }
+              ],
+              "nucleus": {
+                "atomic": {
+                  "pred": "WorkFrom",
+                  "args": [
+                    "x",
+                    "home"
+                  ],
+                  "negated": false
+                },
+                "quantification": null,
+                "negation": null,
+                "connective": null,
+                "operands": null
+              },
+              "inner_quantifications": []
+            },
+            "negation": null,
+            "connective": null,
+            "operands": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "sentence": "It is not the case that Alice is tall and Bob is short.",
+    "extraction": {
+      "nl": "It is not the case that Alice is tall and Bob is short.",
+      "predicates": [
+        {
+          "name": "Tall",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Short",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "alice",
+          "surface": "Alice",
+          "type": "entity"
+        },
+        {
+          "id": "bob",
+          "surface": "Bob",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": null,
+        "negation": {
+          "atomic": null,
+          "quantification": null,
+          "negation": null,
+          "connective": "and",
+          "operands": [
+            {
+              "atomic": {
+                "pred": "Tall",
+                "args": [
+                  "alice"
+                ],
+                "negated": false
+              },
+              "quantification": null,
+              "negation": null,
+              "connective": null,
+              "operands": null
+            },
+            {
+              "atomic": {
+                "pred": "Short",
+                "args": [
+                  "bob"
+                ],
+                "negated": false
+              },
+              "quantification": null,
+              "negation": null,
+              "connective": null,
+              "operands": null
+            }
+          ]
+        },
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "All managers have lunch at the office.",
+    "extraction": {
+      "nl": "All managers have lunch at the office.",
+      "predicates": [
+        {
+          "name": "Manager",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Office",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "HaveLunchAt",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Manager",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": null,
+            "quantification": {
+              "quantifier": "existential",
+              "variable": "y",
+              "var_type": "entity",
+              "restrictor": [
+                {
+                  "pred": "Office",
+                  "args": [
+                    "y"
+                  ],
+                  "negated": false
+                }
+              ],
+              "nucleus": {
+                "atomic": {
+                  "pred": "HaveLunchAt",
+                  "args": [
+                    "x",
+                    "y"
+                  ],
+                  "negated": false
+                },
+                "quantification": null,
+                "negation": null,
+                "connective": null,
+                "operands": null
+              },
+              "inner_quantifications": []
+            },
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "Symptoms of the flu include fever and headache.",
+    "extraction": {
+      "nl": "Symptoms of the flu include fever and headache.",
+      "predicates": [
+        {
+          "name": "SymptomOf",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "flu",
+          "surface": "flu",
+          "type": "entity"
+        },
+        {
+          "id": "fever",
+          "surface": "fever",
+          "type": "entity"
+        },
+        {
+          "id": "headache",
+          "surface": "headache",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": null,
+        "negation": null,
+        "connective": "and",
+        "operands": [
+          {
+            "atomic": {
+              "pred": "SymptomOf",
+              "args": [
+                "fever",
+                "flu"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          {
+            "atomic": {
+              "pred": "SymptomOf",
+              "args": [
+                "headache",
+                "flu"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "sentence": "All games on the list are made by Japanese companies.",
+    "extraction": {
+      "nl": "All games on the list are made by Japanese companies.",
+      "predicates": [
+        {
+          "name": "Game",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "OnList",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        },
+        {
+          "name": "JapaneseCompany",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "MadeBy",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "theList",
+          "surface": "the list",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Game",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "OnList",
+              "args": [
+                "x",
+                "theList"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": null,
+            "quantification": {
+              "quantifier": "existential",
+              "variable": "y",
+              "var_type": "entity",
+              "restrictor": [
+                {
+                  "pred": "JapaneseCompany",
+                  "args": [
+                    "y"
+                  ],
+                  "negated": false
+                }
+              ],
+              "nucleus": {
+                "atomic": {
+                  "pred": "MadeBy",
+                  "args": [
+                    "x",
+                    "y"
+                  ],
+                  "negated": false
+                },
+                "quantification": null,
+                "negation": null,
+                "connective": null,
+                "operands": null
+              },
+              "inner_quantifications": []
+            },
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "All well-paid people live in tax havens.",
+    "extraction": {
+      "nl": "All well-paid people live in tax havens.",
+      "predicates": [
+        {
+          "name": "WellPaid",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Person",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "TaxHaven",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "LiveIn",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "WellPaid",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "Person",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": null,
+            "quantification": {
+              "quantifier": "existential",
+              "variable": "y",
+              "var_type": "entity",
+              "restrictor": [
+                {
+                  "pred": "TaxHaven",
+                  "args": [
+                    "y"
+                  ],
+                  "negated": false
+                }
+              ],
+              "nucleus": {
+                "atomic": {
+                  "pred": "LiveIn",
+                  "args": [
+                    "x",
+                    "y"
+                  ],
+                  "negated": false
+                },
+                "quantification": null,
+                "negation": null,
+                "connective": null,
+                "operands": null
+              },
+              "inner_quantifications": []
+            },
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "Karen binge-watches a Netflix show.",
+    "extraction": {
+      "nl": "Karen binge-watches a Netflix show.",
+      "predicates": [
+        {
+          "name": "NetflixShow",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "BingeWatch",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "karen",
+          "surface": "Karen",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "existential",
+          "variable": "y",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "NetflixShow",
+              "args": [
+                "y"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": {
+              "pred": "BingeWatch",
+              "args": [
+                "karen",
+                "y"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "If and only if Karen watches a show, she downloads it.",
+    "extraction": {
+      "nl": "If and only if Karen watches a show, she downloads it.",
+      "predicates": [
+        {
+          "name": "Show",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "Watch",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        },
+        {
+          "name": "Download",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "karen",
+          "surface": "Karen",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Show",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": null,
+            "quantification": null,
+            "negation": null,
+            "connective": "iff",
+            "operands": [
+              {
+                "atomic": {
+                  "pred": "Watch",
+                  "args": [
+                    "karen",
+                    "x"
+                  ],
+                  "negated": false
+                },
+                "quantification": null,
+                "negation": null,
+                "connective": null,
+                "operands": null
+              },
+              {
+                "atomic": {
+                  "pred": "Download",
+                  "args": [
+                    "karen",
+                    "x"
+                  ],
+                  "negated": false
+                },
+                "quantification": null,
+                "negation": null,
+                "connective": null,
+                "operands": null
+              }
+            ]
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "The summarization model is trained with machine learning algorithms.",
+    "extraction": {
+      "nl": "The summarization model is trained with machine learning algorithms.",
+      "predicates": [
+        {
+          "name": "MachineLearningAlgorithm",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "TrainedWith",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "theModel",
+          "surface": "summarization model",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "y",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "TrainedWith",
+              "args": [
+                "theModel",
+                "y"
+              ],
+              "negated": false
+            }
+          ],
+          "nucleus": {
+            "atomic": {
+              "pred": "MachineLearningAlgorithm",
+              "args": [
+                "y"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "All employees who are not in the home country work from home.",
+    "extraction": {
+      "nl": "All employees who are not in the home country work from home.",
+      "predicates": [
+        {
+          "name": "Employee",
+          "arity": 1,
+          "arg_types": [
+            "entity"
+          ]
+        },
+        {
+          "name": "In",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        },
+        {
+          "name": "WorkFrom",
+          "arity": 2,
+          "arg_types": [
+            "entity",
+            "entity"
+          ]
+        }
+      ],
+      "entities": [],
+      "constants": [
+        {
+          "id": "homeCountry",
+          "surface": "home country",
+          "type": "entity"
+        },
+        {
+          "id": "home",
+          "surface": "home",
+          "type": "entity"
+        }
+      ],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [
+            {
+              "pred": "Employee",
+              "args": [
+                "x"
+              ],
+              "negated": false
+            },
+            {
+              "pred": "In",
+              "args": [
+                "x",
+                "homeCountry"
+              ],
+              "negated": true
+            }
+          ],
+          "nucleus": {
+            "atomic": {
+              "pred": "WorkFrom",
+              "args": [
+                "x",
+                "home"
+              ],
+              "negated": false
+            },
+            "quantification": null,
+            "negation": null,
+            "connective": null,
+            "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null,
+        "connective": null,
+        "operands": null
+      }
+    }
+  }
+]

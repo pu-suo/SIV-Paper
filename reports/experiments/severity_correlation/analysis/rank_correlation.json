@@ -1,0 +1,39 @@
+{
+  "siv_soft_recall": {
+    "mean_rho": 0.8095,
+    "ci_lo": 0.7519,
+    "ci_hi": 0.8625,
+    "n_premises": 105
+  },
+  "siv_soft_f1": {
+    "mean_rho": 0.8387,
+    "ci_lo": 0.7819,
+    "ci_hi": 0.8939,
+    "n_premises": 105
+  },
+  "propositional_le_aligned": {
+    "mean_rho": 0.828,
+    "ci_lo": 0.7725,
+    "ci_hi": 0.8867,
+    "n_premises": 105
+  },
+  "smatchpp": {
+    "mean_rho": 0.8813,
+    "ci_lo": 0.8451,
+    "ci_hi": 0.9165,
+    "n_premises": 105
+  },
+  "bleu": {
+    "mean_rho": 0.4121,
+    "ci_lo": 0.2731,
+    "ci_hi": 0.5547,
+    "n_premises": 105
+  },
+  "bertscore": {
+    "mean_rho": 0.7153,
+    "ci_lo": 0.6215,
+    "ci_hi": 0.7954,
+    "n_premises": 105
+  },
+  "_n_premises_used_for_rho": 105
+}

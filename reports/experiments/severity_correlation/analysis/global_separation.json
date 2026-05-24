@@ -1,0 +1,347 @@
+{
+  "_primary_statistic": "eta_squared_3level",
+  "_secondary_statistic": "cohens_d_ref_vs_ow",
+  "_tertiary_statistic": "auc_ref_vs_ow + auc_ref_vs_perturbed (saturation-prone for self-identity metrics)",
+  "_eligibility_filter_for_d_and_auc": "53 premises with ≥2 non-gold tiers",
+  "_eta_squared_source": "All candidate rows in scored.json (n=267 perturbed; n=372 with REF)",
+  "_bootstrap_resamples": 1000,
+  "_seed": 42,
+  "metrics": {
+    "siv_soft_recall": {
+      "eta_squared_3level": {
+        "value": 0.8753192253138671,
+        "n_total": 267,
+        "levels": [
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "eta_squared_4level": {
+        "value": 0.9355017617371296,
+        "n_total": 372,
+        "levels": [
+          "gold",
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "gold": 105,
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "cohens_d_ref_vs_ow": {
+        "value": 7.2637068559706925,
+        "ci_lo": 6.142715387550955,
+        "ci_hi": 9.209372940664462,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_ow": {
+        "value": 1.0,
+        "ci_lo": 1.0,
+        "ci_hi": 1.0,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_perturbed": {
+        "value": 0.8264462809917356,
+        "ci_lo": 0.7850206611570248,
+        "ci_hi": 0.8677685950413223,
+        "n_ref": 53,
+        "n_perturbed": 121,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      }
+    },
+    "siv_soft_f1": {
+      "eta_squared_3level": {
+        "value": 0.8017378873949652,
+        "n_total": 267,
+        "levels": [
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "eta_squared_4level": {
+        "value": 0.8960185509213585,
+        "n_total": 372,
+        "levels": [
+          "gold",
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "gold": 105,
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "cohens_d_ref_vs_ow": {
+        "value": 4.714788139212674,
+        "ci_lo": 3.9572907293083324,
+        "ci_hi": 6.039492024191883,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_ow": {
+        "value": 1.0,
+        "ci_lo": 1.0,
+        "ci_hi": 1.0,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_perturbed": {
+        "value": 0.859504132231405,
+        "ci_lo": 0.8181818181818181,
+        "ci_hi": 0.8966942148760331,
+        "n_ref": 53,
+        "n_perturbed": 121,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      }
+    },
+    "propositional_le_aligned": {
+      "eta_squared_3level": {
+        "value": 0.0747385580265392,
+        "n_total": 267,
+        "levels": [
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "eta_squared_4level": {
+        "value": 0.3368261591256918,
+        "n_total": 372,
+        "levels": [
+          "gold",
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "gold": 105,
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "cohens_d_ref_vs_ow": {
+        "value": 1.4992170802366818,
+        "ci_lo": 1.2865285711215864,
+        "ci_hi": 1.8320779938595693,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_ow": {
+        "value": 0.9339622641509434,
+        "ci_lo": 0.8867924528301887,
+        "ci_hi": 0.9716981132075472,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_perturbed": {
+        "value": 0.9504132231404958,
+        "ci_lo": 0.921487603305785,
+        "ci_hi": 0.975206611570248,
+        "n_ref": 53,
+        "n_perturbed": 121,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      }
+    },
+    "smatchpp": {
+      "eta_squared_3level": {
+        "value": 0.07224079186263933,
+        "n_total": 267,
+        "levels": [
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "eta_squared_4level": {
+        "value": 0.4342144376272584,
+        "n_total": 372,
+        "levels": [
+          "gold",
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "gold": 105,
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "cohens_d_ref_vs_ow": {
+        "value": 1.8417743788556356,
+        "ci_lo": 1.586526600991129,
+        "ci_hi": 2.1880826478920357,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_ow": {
+        "value": 1.0,
+        "ci_lo": 1.0,
+        "ci_hi": 1.0,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_perturbed": {
+        "value": 1.0,
+        "ci_lo": 1.0,
+        "ci_hi": 1.0,
+        "n_ref": 53,
+        "n_perturbed": 121,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      }
+    },
+    "bleu": {
+      "eta_squared_3level": {
+        "value": 0.02709683514175875,
+        "n_total": 267,
+        "levels": [
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "eta_squared_4level": {
+        "value": 0.11269030312175585,
+        "n_total": 372,
+        "levels": [
+          "gold",
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "gold": 105,
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "cohens_d_ref_vs_ow": {
+        "value": 1.0887983464709001,
+        "ci_lo": 0.7228338943383557,
+        "ci_hi": 1.513100718084477,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_ow": {
+        "value": 0.7682449270202918,
+        "ci_lo": 0.6717337130651477,
+        "ci_hi": 0.8569286222855108,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_perturbed": {
+        "value": 0.8184936847029473,
+        "ci_lo": 0.7561106346483705,
+        "ci_hi": 0.8789957898019648,
+        "n_ref": 53,
+        "n_perturbed": 121,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      }
+    },
+    "bertscore": {
+      "eta_squared_3level": {
+        "value": 0.16969291846791829,
+        "n_total": 267,
+        "levels": [
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "eta_squared_4level": {
+        "value": 0.2896848348970064,
+        "n_total": 372,
+        "levels": [
+          "gold",
+          "overstrong",
+          "partial",
+          "overweak"
+        ],
+        "n_per_level": {
+          "gold": 105,
+          "overstrong": 58,
+          "partial": 25,
+          "overweak": 184
+        }
+      },
+      "cohens_d_ref_vs_ow": {
+        "value": 1.3460073532450059,
+        "ci_lo": 1.022391256583348,
+        "ci_hi": 1.7056254915129934,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_ow": {
+        "value": 0.8816304734781061,
+        "ci_lo": 0.8177198291206835,
+        "ci_hi": 0.9378826984692061,
+        "n_ref": 53,
+        "n_ow": 53,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      },
+      "auc_ref_vs_perturbed": {
+        "value": 0.9004366131295805,
+        "ci_lo": 0.8466337907375644,
+        "ci_hi": 0.9474602370185561,
+        "n_ref": 53,
+        "n_perturbed": 121,
+        "pool": "53-premise ρ-eligible (≥2 non-gold tiers)"
+      }
+    }
+  }
+}

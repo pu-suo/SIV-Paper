@@ -1,0 +1,16 @@
+{
+  "n_processed": 1471,
+  "n_ok": 1393,
+  "n_failed_parse": 77,
+  "n_failed_round_trip": 1,
+  "n_failed_c9a": 0,
+  "n_failed_c9b": 0,
+  "legacy_probe_drops": 0,
+  "mean_positives": 1.6755204594400575,
+  "mean_contrastives": 2.8226848528356068,
+  "contrastives_by_relation": {
+    "incompatible": 2264,
+    "strictly_stronger": 1668
+  },
+  "elapsed_s": 343.5
+}

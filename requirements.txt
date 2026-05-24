@@ -1,0 +1,29 @@
+# SIV core dependencies — the published metric path
+# No GPU required. See requirements-gpu.txt for the optional vLLM backend.
+
+# NLP / Symbolic
+nltk>=3.8
+spacy>=3.7
+
+# API
+openai>=1.0
+
+# Environment
+python-dotenv>=1.0
+
+# Testing
+pytest>=7.0
+
+# Soft-mode alignment (cross-vocabulary scoring)
+sentence-transformers>=2.2.0
+scipy>=1.10.0
+
+# Evaluation study (Tier 2/3 metric comparison)
+sacrebleu>=2.0
+bert-score>=0.3.0
+statsmodels>=0.14.0
+smatchpp>=1.7.0
+
+scikit-learn>=1.3
+datasets>=2.0
+tqdm>=4.65

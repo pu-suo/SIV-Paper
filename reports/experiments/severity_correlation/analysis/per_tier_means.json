@@ -1,0 +1,154 @@
+{
+  "overstrong": {
+    "siv_soft_recall": {
+      "mean": 0.9655,
+      "ci_lo": 0.9138,
+      "ci_hi": 1.0,
+      "n": 58
+    },
+    "siv_soft_f1": {
+      "mean": 0.9289,
+      "ci_lo": 0.878,
+      "ci_hi": 0.972,
+      "n": 58
+    },
+    "propositional_le_aligned": {
+      "mean": 0.8502,
+      "ci_lo": 0.8195,
+      "ci_hi": 0.8766,
+      "n": 58
+    },
+    "smatchpp": {
+      "mean": 0.806,
+      "ci_lo": 0.7836,
+      "ci_hi": 0.825,
+      "n": 58
+    },
+    "bleu": {
+      "mean": 0.3955,
+      "ci_lo": 0.3752,
+      "ci_hi": 0.4166,
+      "n": 58
+    },
+    "bertscore": {
+      "mean": 0.8153,
+      "ci_lo": 0.8057,
+      "ci_hi": 0.825,
+      "n": 58
+    }
+  },
+  "gold": {
+    "siv_soft_recall": {
+      "mean": 1.0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0,
+      "n": 105
+    },
+    "siv_soft_f1": {
+      "mean": 1.0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0,
+      "n": 105
+    },
+    "propositional_le_aligned": {
+      "mean": 1.0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0,
+      "n": 105
+    },
+    "smatchpp": {
+      "mean": 1.0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0,
+      "n": 105
+    },
+    "bleu": {
+      "mean": 0.4848,
+      "ci_lo": 0.4655,
+      "ci_hi": 0.5036,
+      "n": 105
+    },
+    "bertscore": {
+      "mean": 0.8723,
+      "ci_lo": 0.8633,
+      "ci_hi": 0.8806,
+      "n": 105
+    }
+  },
+  "partial": {
+    "siv_soft_recall": {
+      "mean": 0.324,
+      "ci_lo": 0.2333,
+      "ci_hi": 0.4134,
+      "n": 25
+    },
+    "siv_soft_f1": {
+      "mean": 0.442,
+      "ci_lo": 0.3385,
+      "ci_hi": 0.5487,
+      "n": 25
+    },
+    "propositional_le_aligned": {
+      "mean": 0.7963,
+      "ci_lo": 0.765,
+      "ci_hi": 0.8325,
+      "n": 25
+    },
+    "smatchpp": {
+      "mean": 0.6287,
+      "ci_lo": 0.5346,
+      "ci_hi": 0.7207,
+      "n": 25
+    },
+    "bleu": {
+      "mean": 0.3152,
+      "ci_lo": 0.2638,
+      "ci_hi": 0.3687,
+      "n": 25
+    },
+    "bertscore": {
+      "mean": 0.7285,
+      "ci_lo": 0.6955,
+      "ci_hi": 0.7622,
+      "n": 25
+    }
+  },
+  "overweak": {
+    "siv_soft_recall": {
+      "mean": 0.0355,
+      "ci_lo": 0.0203,
+      "ci_hi": 0.0529,
+      "n": 184
+    },
+    "siv_soft_f1": {
+      "mean": 0.0523,
+      "ci_lo": 0.0317,
+      "ci_hi": 0.0776,
+      "n": 184
+    },
+    "propositional_le_aligned": {
+      "mean": 0.7131,
+      "ci_lo": 0.6779,
+      "ci_hi": 0.7471,
+      "n": 184
+    },
+    "smatchpp": {
+      "mean": 0.7399,
+      "ci_lo": 0.7165,
+      "ci_hi": 0.7645,
+      "n": 184
+    },
+    "bleu": {
+      "mean": 0.3974,
+      "ci_lo": 0.3735,
+      "ci_hi": 0.4178,
+      "n": 184
+    },
+    "bertscore": {
+      "mean": 0.8219,
+      "ci_lo": 0.8129,
+      "ci_hi": 0.8302,
+      "n": 184
+    }
+  }
+}

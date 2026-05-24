@@ -1,0 +1,1341 @@
+{
+  "by_label": {
+    "asymmetric": {
+      "recovered": 157,
+      "total": 477,
+      "rate": 0.32914046121593293
+    },
+    "symmetric": {
+      "recovered": 0,
+      "total": 6,
+      "rate": 0.0
+    },
+    "unknown": {
+      "recovered": 0,
+      "total": 11,
+      "rate": 0.0
+    },
+    "?": {
+      "recovered": 0,
+      "total": 0,
+      "rate": 0.0
+    }
+  },
+  "by_predicate": {
+    "DrinkRegularly": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "WantToBeAddictedTo": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "SpecializeInPerformanceOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Love": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "DisplayedIn": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "Attended": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "LocatedIn": {
+      "recovered": 3,
+      "total": 4,
+      "label": "asymmetric"
+    },
+    "Supported": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "In": {
+      "recovered": 18,
+      "total": 65,
+      "label": "asymmetric"
+    },
+    "MorePoints": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Residentof": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "StealsFundsInYr": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Outside": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "Use": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Play": {
+      "recovered": 1,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "Contain": {
+      "recovered": 1,
+      "total": 5,
+      "label": "asymmetric"
+    },
+    "Have": {
+      "recovered": 1,
+      "total": 12,
+      "label": "asymmetric"
+    },
+    "IdealFor": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "At": {
+      "recovered": 3,
+      "total": 15,
+      "label": "asymmetric"
+    },
+    "GrownIn": {
+      "recovered": 0,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "GoodAt": {
+      "recovered": 1,
+      "total": 6,
+      "label": "asymmetric"
+    },
+    "Enjoy": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "LessThan": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Rent": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "GoTo": {
+      "recovered": 0,
+      "total": 6,
+      "label": "asymmetric"
+    },
+    "Attend": {
+      "recovered": 0,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "FondOf": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "DirectedBy": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "From": {
+      "recovered": 5,
+      "total": 8,
+      "label": "asymmetric"
+    },
+    "PlayedAs": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "CanControl": {
+      "recovered": 3,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "CanStandOnTheGround": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Finding": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Ranked": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "KnownSpeciesOf": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "EntitledTo": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "TravelingFrom": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "MainCharacterOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "PetOf": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ExposedTo": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "HateWorkingFor": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "WrittenBy": {
+      "recovered": 3,
+      "total": 7,
+      "label": "asymmetric"
+    },
+    "WrittenIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Adapted": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "About": {
+      "recovered": 2,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "PlacedSecondInGoldMedalsIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Placed": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "DistrictIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "LiveIn": {
+      "recovered": 1,
+      "total": 7,
+      "label": "asymmetric"
+    },
+    "OrderOften": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "OwnedBy": {
+      "recovered": 0,
+      "total": 5,
+      "label": "asymmetric"
+    },
+    "ConnectedTo": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "PerformAt": {
+      "recovered": 0,
+      "total": 5,
+      "label": "asymmetric"
+    },
+    "ProducedIn": {
+      "recovered": 0,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "SoldIn": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "ReturnedBy": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "BelieveIn": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "ExcitedFor": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "LeaveOut": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ProsecuteInAppropriateCourt": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Can": {
+      "recovered": 0,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "Has": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "CanMake": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "PopularAt": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "MakeMeal": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Favor": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "Population": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "FinishesIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ShowRunnerOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Produces": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "AiredOn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Develop": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "EnjoyEating": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "Resist": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Regret": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "StudyIn": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "WorksAt": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Like": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "EnjoyVisiting": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ConsidersMostImportantLoveLanguage": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Released": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "FilmedIn": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "IsDouble": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Admit": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Under": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "InstrumentalIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Knows": {
+      "recovered": 0,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "Speak": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "BornIn": {
+      "recovered": 3,
+      "total": 4,
+      "label": "asymmetric"
+    },
+    "MadeIn": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "EditedBy": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "HandbrakeOf": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "CompeteIn": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "AdjacentWalls": {
+      "recovered": 0,
+      "total": 1,
+      "label": "symmetric"
+    },
+    "Older": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ContributeTo": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "StickTo": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "WearEveryday": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "LikeShoppingFor": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Owns": {
+      "recovered": 0,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "ManagedBy": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "HasLogo": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "Creates": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "HaveEnoughMoneyFor": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "WorkAt": {
+      "recovered": 0,
+      "total": 4,
+      "label": "asymmetric"
+    },
+    "UpgradeToEveryYear": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Own": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "FlyTo": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "Prereq": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "AttendRegularly": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "FocusedOn": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Take": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "DesignedFor": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "WorkWellInTeamsIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ComeToWorkWithEveryDay": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "EnglishClassScore": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "EnglishScore": {
+      "recovered": 2,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "Sleep": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "Choose": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "RewardWith": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Age": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "PoseRiskTo": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ServedAs": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Graduated": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "DesignedBy": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "With": {
+      "recovered": 0,
+      "total": 4,
+      "label": "asymmetric"
+    },
+    "Designed": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "EntraceTo": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "SummerOlympicsIn": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "SoldAt": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ShippedFrom": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ProducedBy": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "Authored": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "HelpSlowDown": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Help": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "GetAJobAt": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "EquippedWith": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "GreaterThan": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Hometown": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "ProfessorEmeritusAt": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "SpecializesIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "BuiltBy": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ReleasedBy": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Simulate": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "IssuedBy": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "TransferredTo": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "UsedWith": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "WorkIn": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "WorkFrom": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "HostShowOn": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Carry": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Win": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ReadBy": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "MoreThan": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "Attending": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Lost": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "Won": {
+      "recovered": 0,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "BelongTo": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ConnectTo": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ProducedAfterNewCTOAppointed": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "By": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "NeedToBeWrittenWith": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Produce": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "SameScore": {
+      "recovered": 0,
+      "total": 2,
+      "label": "symmetric"
+    },
+    "BasedIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Form": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "FormerMemberOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Practice": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "WantToWorkIn": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "GrowUpWith": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "NeedToSave": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "IsAlbumOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Breaks": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "DiscoversIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "RequiredFor": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "InvestIn": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "OfficeIn": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "FlyOver": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Prevent": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "PaintedBy": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Popularize": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Holds": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "DisbandsIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "CameraAccessoryFor": {
+      "recovered": 3,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "Wins": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "MemberOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Defeat": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "PrecededBy": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "InvolvedIn": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "Coach": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ClassroomIn": {
+      "recovered": 1,
+      "total": 5,
+      "label": "asymmetric"
+    },
+    "Born": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Colony": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "RetiredIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "UseEfficiently": {
+      "recovered": 2,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "WonPremierDivisionDuring": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "UsedIn": {
+      "recovered": 1,
+      "total": 5,
+      "label": "asymmetric"
+    },
+    "MadeOf": {
+      "recovered": 1,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "Publish": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "HighlyAcclaimedIn": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "SetIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Near": {
+      "recovered": 0,
+      "total": 2,
+      "label": "symmetric"
+    },
+    "SoldAs": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "EmployeeIn": {
+      "recovered": 1,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "Provide": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "EmigratedTo": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Named": {
+      "recovered": 2,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "FromAndTo": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "Apply": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "LeadTo": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "StateOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "AwardedTo": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "HaveAnACRateLowerThan": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "RecommendedTo": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "StarredByMoreThan": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "PublishedAfter": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "LeadSingleOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Member": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "ProductOf": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Uses": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "FirstDinnerPartyFor": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "RoomFor": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Cover": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Genus": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "OperatedBy": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Before": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "LocatedOn": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Locatedin": {
+      "recovered": 1,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "PursuedBy": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "EnjoyWatching": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "UsedBy": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "PartOf": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "AcquiredBy": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Equals": {
+      "recovered": 0,
+      "total": 1,
+      "label": "symmetric"
+    },
+    "AttendFrequently": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "BuiltFor": {
+      "recovered": 2,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "PlaysIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "CanCatch": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "CanCatchWith": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ServeWith": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Run": {
+      "recovered": 0,
+      "total": 1,
+      "label": "unknown"
+    },
+    "CanTurnInto": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "HeldIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Support": {
+      "recovered": 2,
+      "total": 3,
+      "label": "asymmetric"
+    },
+    "FederalDistrictOf": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "BornOn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "VisitingProfessorOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "PlansToApplyTo": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Provides": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Measure": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "PresentWorkAt": {
+      "recovered": 0,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "InvitedToJoin": {
+      "recovered": 1,
+      "total": 2,
+      "label": "asymmetric"
+    },
+    "AttendInPerson": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ProvidedWith": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ServedIn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "CapitalOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "DaughterOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ParentOf": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Oversee": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "ReleasedAlbum": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "BasedOn": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "Need": {
+      "recovered": 0,
+      "total": 1,
+      "label": "asymmetric"
+    },
+    "CanArgueAgainst": {
+      "recovered": 1,
+      "total": 1,
+      "label": "asymmetric"
+    }
+  }
+}

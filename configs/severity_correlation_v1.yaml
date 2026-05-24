@@ -1,0 +1,489 @@
+# Severity-correlation experiment — pre-registered design
+#
+# Authoritative pre-registration artifact for paper Exp 1 (graded
+# severity correlation). The operator catalog, applicability
+# predicates, tier assignments, cell-count targets, stratification
+# rule, predicate hierarchy, and analysis plan below are fixed.
+
+design_id: severity_correlation_v1
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Stratification rule
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# Implemented in siv/fol_utils.py:formula_stratum(formula) -> int.
+# Bucket assignment is by atom count and structural shape, not by clause
+# count alone. Check order (most specific check wins):
+#
+#   1. propositional         — no quantifiers anywhere in the AST
+#   5. structurally rich     — multi-atom restrictor OR multi-atom
+#                              consequent OR multiple top-level clauses
+#                              (each containing a quantifier)
+#   4. nested quantifiers    — at least one quantifier inside another's scope
+#   3. restricted-simple     — single ∀.(R(x) → C(x)), single-atom R and C
+#   2. single-quantifier     — default for any other single-quantifier form
+#
+# S5 dominates S4: a multi-clause/multi-atom formula with nested
+# quantifiers is bucketed S5 (structural richness dominates nesting).
+
+strata:
+  - id: 1
+    name: propositional
+    rule: "no quantifiers anywhere"
+    example: "D(rex) & M(rex)"
+  - id: 2
+    name: single_quantifier
+    rule: "exactly one quantifier; not restricted-simple (S3)"
+    example: "∀x.P(x)"
+  - id: 3
+    name: restricted_simple
+    rule: "∀x.(P(x) → Q(x)) with single-atom restrictor and single-atom consequent"
+    example: "∀x.(D(x) → M(x))"
+  - id: 4
+    name: nested_quantifiers
+    rule: "≥2 quantifiers, one nested inside another; not structurally rich (S5)"
+    example: "∀x.(D(x) → ∃y.O(x, y))"
+  - id: 5
+    name: structurally_rich
+    rule: "multi-atom restrictor OR multi-atom consequent OR multiple top-level clauses"
+    example: "∀x.((D(x) & Dom(x)) → M(x))"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Operator catalog (15 operators across 3 tiers)
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# Each operator lives in siv/nltk_perturbations.py as:
+#   <NAME>(expr) -> Expression               — pure AST transform
+#   <NAME>_applies_to(expr) -> bool          — applicability predicate
+#
+# Verification: every candidate is checked with Vampire bidirectional
+# entailment (cand⊨gold, gold⊨cand). The expected verdict for each tier is
+# encoded below. Candidates whose actual Vampire verdict differs from
+# expected are DROPPED (rule: drop, don't relabel).
+#
+# Witness axioms: derived from the gold formula's structure when
+# specified, passed to vampire_check(axioms=...).
+
+operators:
+
+  # ── OS — Overstrong (cand ⊨ gold ∧ gold ⊭ cand) ─────────────────────────
+
+  - name: OS_add_nucleus_conjunct
+    tier: overstrong
+    description: |
+      Add one new atomic conjunct (using a predicate from the gold's
+      signature not already present in the consequent/nucleus) to the
+      consequent of an implication or the nucleus of a quantifier, or to a
+      top-level propositional conjunction.
+    applicability:
+      requires: ["has_conjunctive_or_atomic_consequent OR is_propositional_conjunction",
+                 "≥1 unused predicate available in signature"]
+    expected_entailment: cand_entails_gold
+    witness_axioms: none
+    example:
+      gold: "∀x.(D(x) → M(x))"
+      cand: "∀x.(D(x) → (M(x) ∧ H(x)))"
+
+  - name: OS_strengthen_quantifier
+    tier: overstrong
+    description: |
+      Replace an inner existential (in the consequent of a universal) with
+      a universal — strengthens because ∀y entails ∃y under non-empty domain.
+    applicability:
+      requires: ["pattern: ∀x.(P(x) → ∃y.Q(x, y))",
+                 "i.e. nested ∃ inside a ∀ scope"]
+    expected_entailment: cand_entails_gold
+    witness_axioms: none
+    example:
+      gold: "∀x.(H(x) → ∃y.(C(y) ∧ Hold(x, y)))"
+      cand: "∀x.(H(x) → ∀y.(C(y) ∧ Hold(x, y)))"
+
+  - name: OS_narrow_consequent
+    tier: overstrong
+    description: |
+      Add an extra atomic constraint to an existential conjunction body.
+      Applies in the ∃-body case where adding a conjunct strengthens
+      (contrast: adding to a universal's antecedent weakens — see
+      OW_overrestrict_antecedent).
+    applicability:
+      requires: ["pattern: ∃x.(P₁ ∧ P₂ ∧ ...)",
+                 "≥1 unused predicate available in signature"]
+    expected_entailment: cand_entails_gold
+    witness_axioms: none
+    example:
+      gold: "∃x.(D(x) ∧ M(x))"
+      cand: "∃x.(D(x) ∧ M(x) ∧ Dom(x))"
+
+  - name: OS_strengthen_predicate
+    tier: overstrong
+    description: |
+      Replace a consequent/nucleus predicate with a strictly-stronger
+      sibling from the curated hierarchy (subtype ⊏ supertype:
+      replacing supertype with subtype in a consequent strengthens).
+      Severity varies with semantic distance — adjacent hops produce
+      barely-stronger formulas; this is per-candidate variance, not a
+      design flaw.
+    applicability:
+      requires: ["consequent contains predicate P present in hierarchy with
+                   a strict subtype P' also present"]
+    expected_entailment: cand_entails_gold
+    witness_axioms: none
+    example:
+      gold: "∀x.(D(x) → Animal(x))"
+      cand: "∀x.(D(x) → Mammal(x))"
+
+  - name: OS_drop_conjunctive_restrictor
+    tier: overstrong
+    description: |
+      Drop ONE conjunct from a multi-conjunct restrictor of a universal
+      implication. Broadens the universal's range → strengthens the claim.
+      Paired with P_drop_disjunctive_restrictor (which weakens by the same
+      surface action — disjuncts not conjuncts). Same operation, opposite
+      logical direction, separated by connective.
+    applicability:
+      requires: ["pattern: ∀x.((R₁(x) ∧ R₂(x) ∧ ...) → C(x))",
+                 "antecedent has ≥2 conjuncts AND ≥1 conjunct remains post-drop"]
+    expected_entailment: cand_entails_gold
+    witness_axioms: none
+    example:
+      gold: "∀x.((D(x) ∧ Dom(x)) → M(x))"
+      cand: "∀x.(D(x) → M(x))"
+
+  # ── P — Partial (gold ⊨ cand ∧ cand ⊭ gold) ──────────────────────────────
+
+  - name: P_drop_conjunct
+    tier: partial
+    description: |
+      Drop ONE conjunct from a multi-conjunct nucleus / consequent /
+      top-level propositional conjunction.
+    applicability:
+      requires: ["target conjunction has ≥2 atoms AND ≥1 atom remains
+                   post-drop"]
+    expected_entailment: gold_entails_cand
+    witness_axioms: none
+    example:
+      gold: "D(c) ∧ M(c) ∧ H(c)"
+      cand: "D(c) ∧ M(c)"
+
+  - name: P_drop_consequent_atom
+    tier: partial
+    description: |
+      Drop ONE atom from a multi-atom implication consequent.
+    applicability:
+      requires: ["pattern: ∀x.(R(x) → (C₁(x) ∧ C₂(x) ∧ ...))",
+                 "consequent has ≥2 atoms"]
+    expected_entailment: gold_entails_cand
+    witness_axioms: none
+    example:
+      gold: "∀x.(R(x) → (P(x) ∧ Q(x)))"
+      cand: "∀x.(R(x) → P(x))"
+
+  - name: P_weaken_predicate
+    tier: partial
+    description: |
+      Replace a consequent predicate with a 1-hop-weaker supertype from
+      the curated hierarchy. Per-candidate severity varies with hierarchy
+      depth.
+    applicability:
+      requires: ["consequent contains predicate P present in hierarchy
+                   with a 1-hop supertype P' also present"]
+    expected_entailment: gold_entails_cand
+    witness_axioms: none
+    example:
+      gold: "∀x.(D(x) → Mammal(x))"
+      cand: "∀x.(D(x) → Animal(x))"
+
+  - name: P_drop_disjunctive_restrictor
+    tier: partial
+    description: |
+      Drop ONE disjunct from a disjunctive restrictor of a universal
+      implication. Narrows the universal's range (the implication now
+      applies to fewer x) → weakens the claim. Paired with
+      OS_drop_conjunctive_restrictor (which strengthens by the same surface
+      action). Disjunctive restrictors are rare in FOLIO; expected low yield.
+    applicability:
+      requires: ["pattern: ∀x.((R₁(x) ∨ R₂(x) ∨ ...) → C(x))",
+                 "antecedent has ≥2 disjuncts AND ≥1 remains post-drop"]
+    expected_entailment: gold_entails_cand
+    witness_axioms: none
+    example:
+      gold: "∀x.((D(x) ∨ C(x)) → M(x))"
+      cand: "∀x.(D(x) → M(x))"
+
+  # ── OW — Overweak (gold ⊨ cand ∧ cand ⊭ gold; drastic by construction) ──
+
+  - name: OW_drop_consequent_severely
+    tier: overweak
+    description: |
+      Keep EXACTLY ONE atom in a multi-atom consequent / propositional
+      conjunction; drop the rest. Drastic by entailment-content loss.
+    applicability:
+      requires: ["target conjunction has ≥2 atoms"]
+    expected_entailment: gold_entails_cand
+    witness_axioms: none
+    example:
+      gold: "∀x.(R(x) → (P(x) ∧ Q(x) ∧ S(x)))"
+      cand: "∀x.(R(x) → P(x))"
+
+  - name: OW_weaken_predicate_severely
+    tier: overweak
+    description: |
+      Replace a predicate with a ≥2-hop-weaker ancestor from the curated
+      hierarchy (vs. P_weaken_predicate which moves 1 hop). Drastic by
+      semantic distance.
+    applicability:
+      requires: ["consequent contains predicate P with a ≥2-hop ancestor
+                   in the hierarchy"]
+    expected_entailment: gold_entails_cand
+    witness_axioms: none
+    example:
+      gold: "∀x.(D(x) → Labrador(x))"
+      cand: "∀x.(D(x) → Animal(x))"
+
+  - name: OW_de_quantify_to_c0
+    tier: overweak
+    description: |
+      Replace an outer quantifier with a single instantiation at a fresh
+      constant `c_0`. The constant choice is ALWAYS `c_0` regardless of
+      what constants appear in the gold's signature — predictable across
+      the catalog, no dependency on per-formula signature.
+    applicability:
+      requires: ["formula has an outer ∀ or ∃"]
+    expected_entailment: gold_entails_cand
+    witness_axioms: none
+    example:
+      gold: "∀x.(D(x) → M(x))"
+      cand: "D(c_0) → M(c_0)"
+
+  - name: OW_flip_outer_quantifier
+    tier: overweak
+    description: |
+      Replace outermost ∀ with ∃, keeping body intact. Canonical Brunello
+      LE-failure case: LE-aligned reduces ∀x.P(x) and ∃x.P(x) to the same
+      propositional variable and scores this at ≈1.0; SIV's positive
+      probes (universally instantiated) crash to ≈0.
+    applicability:
+      requires: ["top-level operator is ∀"]
+    expected_entailment: gold_entails_cand
+    witness_axioms: none
+    example:
+      gold: "∀x.(P(x) → Q(x))"
+      cand: "∃x.(P(x) → Q(x))"
+    load_bearing_for: LE_failure_demonstration
+
+  - name: OW_weaken_to_existential
+    tier: overweak
+    description: |
+      Convert universal implication to existential conjunction. Requires
+      witness axiom (∃x.P(x)) for Vampire to confirm gold ⊨ cand — without
+      it, gold could be vacuously true. LE-aligned fails for the same
+      reason as flip_outer_quantifier (quantifier reduces to same
+      propositional variable).
+    applicability:
+      requires: ["pattern: ∀x.(P(x) → Q(x))",
+                 "P is a single atom or simple conjunction (so witness
+                   axiom can be derived)"]
+    expected_entailment: gold_entails_cand
+    witness_axioms:
+      derive: "∃x.<antecedent>(x)"
+      example: "for ∀x.(D(x) → M(x)), use ∃x.D(x)"
+    example:
+      gold: "∀x.(D(x) → M(x))"
+      cand: "∃x.(D(x) ∧ M(x))"
+    load_bearing_for: LE_failure_demonstration
+
+  - name: OW_overrestrict_antecedent
+    tier: overweak
+    description: |
+      Add one new atomic conjunct to the antecedent of a universal
+      implication. Narrows the universal's range → weakens the claim
+      (gold ⊨ cand). Pairs symmetrically with OS_narrow_consequent: same
+      surface action ("add a conjunct"), opposite logical direction,
+      separated by where it lands (antecedent vs consequent). Diversifies
+      OW with a non-quantifier-scope operator. Severity varies with how
+      restrictive the added predicate is semantically — rare predicates
+      make it severely weaker; common predicates barely weaker. This is
+      per-candidate variance, not a design flaw.
+    applicability:
+      requires: ["pattern: ∀x.(R(x) → C(x)) or ∀x.((R₁ ∧ ...)(x) → C(x))",
+                 "≥1 unused predicate available in signature"]
+    expected_entailment: gold_entails_cand
+    witness_axioms: none
+    example:
+      gold: "∀x.(D(x) → M(x))"
+      cand: "∀x.((D(x) ∧ Dom(x)) → M(x))"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Predicate hierarchy (hand-curated from FOLIO vocabulary)
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# 26 subtype-supertype pairs covering the most common semantic chains in
+# FOLIO. Each row asserts: subtype ⊨ supertype (every subtype is a
+# supertype). Used by:
+#   - OS_strengthen_predicate: supertype → subtype rewrite in consequent
+#   - P_weaken_predicate: subtype → supertype (1 hop)
+#   - OW_weaken_predicate_severely: subtype → ≥2-hop-ancestor
+#
+# Curation source: top-150 most-frequent FOLIO predicates. Pairs included
+# only when subsumption is unambiguous (Mammal ⊏ Animal: yes; American ⊏
+# Person: no — American is a nationality attribute, not a subtype).
+# Multi-level chains (e.g., Leukemia ⊏ BloodCancer ⊏ Cancer ⊏ Disease)
+# are included to support OW_weaken_predicate_severely's ≥2-hop case.
+
+predicate_hierarchy:
+  # Animal kingdom (multi-level)
+  - { subtype: Mammal,    supertype: Animal }
+  - { subtype: Bird,      supertype: Animal }
+  - { subtype: Fish,      supertype: Animal }
+  - { subtype: Reptile,   supertype: Animal }
+  - { subtype: Dog,       supertype: Mammal }
+  - { subtype: Cat,       supertype: Mammal }
+  - { subtype: Horse,     supertype: Mammal }
+  - { subtype: Elephant,  supertype: Mammal }
+  - { subtype: Penguin,   supertype: Bird }
+  # Plants / food
+  - { subtype: Fruit,     supertype: Plant }
+  # People / professions
+  - { subtype: Student,           supertype: Person }
+  - { subtype: PhDStudent,        supertype: Student }
+  - { subtype: Teacher,           supertype: Person }
+  - { subtype: Professor,         supertype: Teacher }
+  - { subtype: Lawyer,            supertype: Person }
+  - { subtype: Musician,          supertype: Person }
+  - { subtype: Singer,            supertype: Musician }
+  - { subtype: Writer,            supertype: Person }
+  - { subtype: Entrepreneur,      supertype: Person }
+  # Sports / athletes
+  - { subtype: SoccerPlayer,                 supertype: Player }
+  - { subtype: ProfessionalSoccerPlayer,     supertype: SoccerPlayer }
+  - { subtype: ProfessionalSoccerDefender,   supertype: ProfessionalSoccerPlayer }
+  - { subtype: FootballPlayer,               supertype: Player }
+  - { subtype: ProfessionalBasketballPlayer, supertype: Player }
+  - { subtype: ProfessionalTennisPlayer,     supertype: Player }
+  # Disease (multi-level for severe-hop)
+  - { subtype: Cancer,      supertype: Disease }
+  - { subtype: BloodCancer, supertype: Cancer }
+  - { subtype: Leukemia,    supertype: BloodCancer }
+
+# Multi-hop chains derivable from the table above (for documentation /
+# unit-test reference; not duplicated as additional pairs):
+#   Dog ⊏ Mammal ⊏ Animal                                                 (2 hops)
+#   Penguin ⊏ Bird ⊏ Animal                                               (2 hops)
+#   PhDStudent ⊏ Student ⊏ Person                                         (2 hops)
+#   Professor ⊏ Teacher ⊏ Person                                          (2 hops)
+#   Singer ⊏ Musician ⊏ Person                                            (2 hops)
+#   ProfessionalSoccerDefender ⊏ ProfessionalSoccerPlayer ⊏ SoccerPlayer ⊏ Player  (3 hops)
+#   ProfessionalSoccerPlayer ⊏ SoccerPlayer ⊏ Player                      (2 hops)
+#   Leukemia ⊏ BloodCancer ⊏ Cancer ⊏ Disease                             (3 hops)
+#   BloodCancer ⊏ Cancer ⊏ Disease                                        (2 hops)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Cell-count targets (stratum × operator → target candidates after verif.)
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# Targets are the count we attempt to populate; actual retained counts may
+# be lower if Vampire rejects candidates as equivalent/incompatible.
+# Cells marked `null` are inapplicable by operator construction.
+# Cells marked `low_yield` are applicable but expected to retain few
+# candidates (rare structural shape, witness-axiom dependency, etc.).
+#
+# Strict applicable cells: 39. Low-yield applicable cells: 17.
+# Target total candidates after verification: 200-300.
+
+cell_targets:
+  # Format: <operator>: { S1: target | null | "low_yield", S2: ..., ... }
+  OS_add_nucleus_conjunct:           { S1: 8, S2: 8, S3: 8, S4: 8, S5: 8 }
+  OS_strengthen_quantifier:          { S1: null, S2: null, S3: null, S4: 8, S5: 8 }
+  OS_narrow_consequent:              { S1: 8, S2: low_yield, S3: null, S4: low_yield, S5: 8 }
+  OS_strengthen_predicate:           { S1: 8, S2: 8, S3: 8, S4: 8, S5: 8 }
+  OS_drop_conjunctive_restrictor:    { S1: null, S2: null, S3: null, S4: low_yield, S5: 8 }
+  P_drop_conjunct:                   { S1: low_yield, S2: null, S3: null, S4: low_yield, S5: 8 }
+  P_drop_consequent_atom:            { S1: null, S2: null, S3: null, S4: low_yield, S5: 8 }
+  P_weaken_predicate:                { S1: 8, S2: 8, S3: 8, S4: 8, S5: 8 }
+  # S2 is low_yield because the operator applies to any ∀-implication
+  # restrictor regardless of consequent atomicity; some ∀-implications
+  # land in S2 by the stratum rule (non-atomic consequents).
+  P_drop_disjunctive_restrictor:     { S1: null, S2: low_yield, S3: low_yield, S4: low_yield, S5: low_yield }
+  OW_drop_consequent_severely:       { S1: low_yield, S2: null, S3: null, S4: low_yield, S5: 8 }
+  OW_weaken_predicate_severely:      { S1: 8, S2: 8, S3: 8, S4: 8, S5: 8 }
+  OW_de_quantify_to_c0:              { S1: null, S2: 8, S3: 8, S4: 8, S5: 8 }
+  OW_flip_outer_quantifier:          { S1: null, S2: 8, S3: 8, S4: 8, S5: 8 }
+  # S2 is low_yield because ∀-implication structure may land in S2
+  # when the consequent is non-atomic (Negation/Disjunction).
+  OW_weaken_to_existential:          { S1: null, S2: low_yield, S3: 8, S4: low_yield, S5: low_yield }
+  # S2 is low_yield — same rationale as OW_weaken_to_existential:
+  # operator applies to any ∀-implication.
+  OW_overrestrict_antecedent:        { S1: null, S2: low_yield, S3: 8, S4: low_yield, S5: 8 }
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Sourcing
+# ─────────────────────────────────────────────────────────────────────────────
+
+sourcing:
+  primary: FOLIO golds bucketed by stratum
+  supplementary: |
+    Templated synthesis using FOLIO's predicate vocabulary, applied only
+    to under-represented strata (expected: S1 propositional, S4 nested).
+  reporting:
+    folio_vs_synthetic_ratio_per_stratum: required in results.md
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Pre-registered analysis plan
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# Primary, secondary, and sanity analyses are fixed below.
+
+analysis:
+
+  primary:
+    # Magnitude of severity separation. Output:
+    #   reports/experiments/severity_correlation/analysis/global_separation.json
+    - η² (one-way ANOVA, tier as factor) — variance explained by tier,
+      reported at 3-level (OS/P/OW, n=267) and 4-level (+REF, n=372)
+    - Cohen's d on REF vs OW (53-premise ρ-eligible pool; 95% bootstrap CI)
+    - per-tier mean per metric (descriptive evidence under the η² summary)
+    - severity-monotonicity check per metric: does mean(gold) > mean(OS) > mean(P) > mean(OW)?
+
+  secondary:
+    # Rank-based separation. Same artifact as primary plus per-operator AUC.
+    - adjacent-tier AUC (REF-vs-OS, OS-vs-P, P-vs-OW) per metric, with
+      paired bootstrap CIs (separation_aucs_preview.json + global_separation.json)
+    - global ROC AUC for REF-vs-OW and REF-vs-perturbed per metric
+      (global_separation.json) — flagged for self-identity saturation
+      on REF (SIV-soft-recall, SIV-soft-F1, and Smatch++ all hit 1.000
+      by construction on REF; see §4.3 of results.md)
+    - per-stratum decomposition of tier means + within-stratum ρ
+    - per-operator AUC (gold vs each operator's candidates)
+
+  tertiary:
+    # Aggregate rank correlation. Retained as a descriptive statistic;
+    # demoted below η²/Cohen's d because of REF anchoring, OS/P rank-2
+    # ties, and SIV's binary-leaning within-premise ties.
+    - aggregate Spearman ρ across REF-OS-P-OW (rank vector {1, 2, 3};
+      n_premises=105; OS and P tied at rank 2)
+
+  sanity:
+    - GIB floor: ~30 unrelated formulas (not from operator catalog), all metric means reported; not included in Spearman ρ
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Scoring metrics (all 6 scored per candidate)
+# ─────────────────────────────────────────────────────────────────────────────
+
+scoring_metrics:
+  - siv_soft_recall                   # positive probes only
+  - siv_soft_f1                       # positive + contrastive probes
+  - propositional_le_aligned          # truth-table LE (siv/propositional_le.py) — NOT binary Z3
+  - smatchpp                          # graph-edit distance
+  - bleu
+  - bertscore
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Implementation phase (post-freeze)
+# ─────────────────────────────────────────────────────────────────────────────
+
+implementation:
+  operator_module: siv/nltk_perturbations.py
+  stratification_module: siv/fol_utils.py
+  generation_module: scripts/experiments/run_severity_correlation.py  # rewritten in implementation phase
+  test_module: tests/test_severity_correlation_operators.py
+  data_dir: reports/experiments/severity_correlation/

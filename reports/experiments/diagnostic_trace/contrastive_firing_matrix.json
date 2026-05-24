@@ -1,0 +1,152 @@
+{
+  "classes": [
+    "arg_swap",
+    "negation_drop",
+    "restrictor_drop",
+    "random_substitution",
+    "flip_outer_quantifier",
+    "strengthen_quantifier"
+  ],
+  "operators": [
+    "disjunct_drop",
+    "drop_restrictor_conjunct",
+    "flip_connective",
+    "flip_quantifier",
+    "negate_atom",
+    "replace_subformula_with_negation",
+    "scope_swap",
+    "swap_binary_args"
+  ],
+  "n_per_class": {
+    "arg_swap": 494,
+    "negation_drop": 132,
+    "restrictor_drop": 231,
+    "random_substitution": 638,
+    "flip_outer_quantifier": 355,
+    "strengthen_quantifier": 15
+  },
+  "counts": {
+    "arg_swap": {
+      "disjunct_drop": 0,
+      "drop_restrictor_conjunct": 0,
+      "flip_connective": 1,
+      "flip_quantifier": 1,
+      "negate_atom": 1,
+      "replace_subformula_with_negation": 1,
+      "scope_swap": 0,
+      "swap_binary_args": 158
+    },
+    "negation_drop": {
+      "disjunct_drop": 0,
+      "drop_restrictor_conjunct": 0,
+      "flip_connective": 1,
+      "flip_quantifier": 0,
+      "negate_atom": 65,
+      "replace_subformula_with_negation": 84,
+      "scope_swap": 0,
+      "swap_binary_args": 0
+    },
+    "restrictor_drop": {
+      "disjunct_drop": 0,
+      "drop_restrictor_conjunct": 230,
+      "flip_connective": 2,
+      "flip_quantifier": 0,
+      "negate_atom": 2,
+      "replace_subformula_with_negation": 2,
+      "scope_swap": 0,
+      "swap_binary_args": 0
+    },
+    "random_substitution": {
+      "disjunct_drop": 0,
+      "drop_restrictor_conjunct": 0,
+      "flip_connective": 0,
+      "flip_quantifier": 0,
+      "negate_atom": 0,
+      "replace_subformula_with_negation": 0,
+      "scope_swap": 0,
+      "swap_binary_args": 0
+    },
+    "flip_outer_quantifier": {
+      "disjunct_drop": 0,
+      "drop_restrictor_conjunct": 0,
+      "flip_connective": 0,
+      "flip_quantifier": 1,
+      "negate_atom": 0,
+      "replace_subformula_with_negation": 0,
+      "scope_swap": 0,
+      "swap_binary_args": 0
+    },
+    "strengthen_quantifier": {
+      "disjunct_drop": 1,
+      "drop_restrictor_conjunct": 1,
+      "flip_connective": 0,
+      "flip_quantifier": 15,
+      "negate_atom": 1,
+      "replace_subformula_with_negation": 1,
+      "scope_swap": 14,
+      "swap_binary_args": 1
+    }
+  },
+  "rates": {
+    "arg_swap": {
+      "disjunct_drop": 0.0,
+      "drop_restrictor_conjunct": 0.0,
+      "flip_connective": 0.0020242914979757085,
+      "flip_quantifier": 0.0020242914979757085,
+      "negate_atom": 0.0020242914979757085,
+      "replace_subformula_with_negation": 0.0020242914979757085,
+      "scope_swap": 0.0,
+      "swap_binary_args": 0.31983805668016196
+    },
+    "negation_drop": {
+      "disjunct_drop": 0.0,
+      "drop_restrictor_conjunct": 0.0,
+      "flip_connective": 0.007575757575757576,
+      "flip_quantifier": 0.0,
+      "negate_atom": 0.49242424242424243,
+      "replace_subformula_with_negation": 0.6363636363636364,
+      "scope_swap": 0.0,
+      "swap_binary_args": 0.0
+    },
+    "restrictor_drop": {
+      "disjunct_drop": 0.0,
+      "drop_restrictor_conjunct": 0.9956709956709957,
+      "flip_connective": 0.008658008658008658,
+      "flip_quantifier": 0.0,
+      "negate_atom": 0.008658008658008658,
+      "replace_subformula_with_negation": 0.008658008658008658,
+      "scope_swap": 0.0,
+      "swap_binary_args": 0.0
+    },
+    "random_substitution": {
+      "disjunct_drop": 0.0,
+      "drop_restrictor_conjunct": 0.0,
+      "flip_connective": 0.0,
+      "flip_quantifier": 0.0,
+      "negate_atom": 0.0,
+      "replace_subformula_with_negation": 0.0,
+      "scope_swap": 0.0,
+      "swap_binary_args": 0.0
+    },
+    "flip_outer_quantifier": {
+      "disjunct_drop": 0.0,
+      "drop_restrictor_conjunct": 0.0,
+      "flip_connective": 0.0,
+      "flip_quantifier": 0.0028169014084507044,
+      "negate_atom": 0.0,
+      "replace_subformula_with_negation": 0.0,
+      "scope_swap": 0.0,
+      "swap_binary_args": 0.0
+    },
+    "strengthen_quantifier": {
+      "disjunct_drop": 0.06666666666666667,
+      "drop_restrictor_conjunct": 0.06666666666666667,
+      "flip_connective": 0.0,
+      "flip_quantifier": 1.0,
+      "negate_atom": 0.06666666666666667,
+      "replace_subformula_with_negation": 0.06666666666666667,
+      "scope_swap": 0.9333333333333333,
+      "swap_binary_args": 0.06666666666666667
+    }
+  }
+}

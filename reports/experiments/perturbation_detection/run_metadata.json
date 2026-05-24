@@ -1,0 +1,102 @@
+{
+  "step1": {
+    "n_test_suites": 1393,
+    "n_structural_filter_drop": 695,
+    "n_sc_overlap_drop": 56,
+    "n_reference_pool": 642,
+    "sc_design_pool_size": 128
+  },
+  "step2": {
+    "n_raw_total": 1916,
+    "n_parse_fail": 0,
+    "per_class_generated": {
+      "arg_swap": 502,
+      "random_substitution": 641,
+      "flip_outer_quantifier": 359,
+      "negation_drop": 165,
+      "restrictor_drop": 233,
+      "strengthen_quantifier": 16
+    },
+    "per_class_not_applicable": {
+      "negation_drop": 477,
+      "restrictor_drop": 409,
+      "strengthen_quantifier": 626,
+      "flip_outer_quantifier": 283,
+      "arg_swap": 140,
+      "random_substitution": 1
+    },
+    "per_class_reparse_fail": {},
+    "seed": 42
+  },
+  "step3": {
+    "vampire_timeout_s": 10,
+    "n_verified_total": 1916,
+    "n_kept_total": 1865,
+    "per_class_kept": {
+      "arg_swap": 494,
+      "random_substitution": 638,
+      "flip_outer_quantifier": 355,
+      "negation_drop": 132,
+      "restrictor_drop": 231,
+      "strengthen_quantifier": 15
+    },
+    "per_class_total": {
+      "arg_swap": 502,
+      "random_substitution": 641,
+      "flip_outer_quantifier": 359,
+      "negation_drop": 165,
+      "restrictor_drop": 233,
+      "strengthen_quantifier": 16
+    },
+    "per_class_drop_reasons": {
+      "negation_drop": {
+        "actual=equivalent": 2,
+        "actual=gold_entails_cand": 25,
+        "actual=cand_entails_gold": 6
+      },
+      "arg_swap": {
+        "actual=gold_entails_cand": 3,
+        "actual=equivalent": 3,
+        "actual=cand_entails_gold": 2
+      },
+      "restrictor_drop": {
+        "actual=equivalent": 2
+      },
+      "random_substitution": {
+        "actual=equivalent": 3
+      },
+      "flip_outer_quantifier": {
+        "actual=equivalent": 4
+      },
+      "strengthen_quantifier": {
+        "actual=equivalent": 1
+      }
+    },
+    "wall_time_s": 33.2
+  },
+  "step4": {
+    "vampire_timeout_s": 10,
+    "n_gold_scored": 640,
+    "n_perturbed_scored": 1865,
+    "wall_time_s": 2398.7
+  },
+  "step5": {
+    "n_scored": 1865,
+    "siv_strict_f1_drop_by_class": {
+      "arg_swap": 0.7572,
+      "negation_drop": 0.8204,
+      "restrictor_drop": 0.1692,
+      "random_substitution": 0.9424,
+      "flip_outer_quantifier": 0.9745,
+      "strengthen_quantifier": 0.3246
+    },
+    "siv_strict_f1_detection_rate_by_class": {
+      "arg_swap": 0.998,
+      "negation_drop": 0.9924,
+      "restrictor_drop": 0.9957,
+      "random_substitution": 0.9984,
+      "flip_outer_quantifier": 0.9972,
+      "strengthen_quantifier": 1.0
+    }
+  }
+}

@@ -1,0 +1,75 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+pip-wheel-metadata/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# ── Testing & coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Secrets & API keys ────────────────────────────────────────────────────────
+.env
+.env.*
+secrets.json
+*_secret*
+*_secrets*
+
+# ── Vampire binary ────────────────────────────────────────────────────────────
+/vampire
+/vampire_macos
+
+# ── Regenerable experiment artifacts ─────────────────────────────────────────
+# Large, regenerable files inside the experiment bundles. The pre-registered
+# specs (predicted_patterns.md, configs/, README.md, results.md) stay tracked;
+# the regenerable raw outputs and caches do not.
+reports/experiments/severity_correlation/.nl_cache/
+reports/experiments/diagnostic_trace/trace_features.jsonl
+reports/experiments/diagnostic_trace/extraction.log
+
+# ── Results & exports ─────────────────────────────────────────────────────────
+results_*.csv
+results_*.json
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── Editors ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Claude Code ───────────────────────────────────────────────────────────────
+.claude/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+*.log
+*.tmp
+
+# ── SIV extraction cache (cache entries are regenerable; .gitkeep is tracked) ─
+.siv_cache/*.jsonl

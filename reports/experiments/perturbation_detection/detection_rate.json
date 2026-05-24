@@ -1,0 +1,398 @@
+{
+  "BLEU": {
+    "arg_swap": {
+      "n": 494,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "negation_drop": {
+      "n": 132,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "restrictor_drop": {
+      "n": 231,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "random_substitution": {
+      "n": 638,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "flip_outer_quantifier": {
+      "n": 355,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "strengthen_quantifier": {
+      "n": 15,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    }
+  },
+  "BERTScore": {
+    "arg_swap": {
+      "n": 494,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "negation_drop": {
+      "n": 132,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "restrictor_drop": {
+      "n": 231,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "random_substitution": {
+      "n": 638,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "flip_outer_quantifier": {
+      "n": 355,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "strengthen_quantifier": {
+      "n": 15,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    }
+  },
+  "Smatch++": {
+    "arg_swap": {
+      "n": 494,
+      "rate": 0.9818,
+      "n_ties": 6,
+      "ci_lo": 0.9696,
+      "ci_hi": 0.9919
+    },
+    "negation_drop": {
+      "n": 132,
+      "rate": 0.9924,
+      "n_ties": 0,
+      "ci_lo": 0.9771,
+      "ci_hi": 1.0
+    },
+    "restrictor_drop": {
+      "n": 231,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "random_substitution": {
+      "n": 638,
+      "rate": 0.9969,
+      "n_ties": 0,
+      "ci_lo": 0.9922,
+      "ci_hi": 1.0
+    },
+    "flip_outer_quantifier": {
+      "n": 355,
+      "rate": 0.9972,
+      "n_ties": 0,
+      "ci_lo": 0.9915,
+      "ci_hi": 1.0
+    },
+    "strengthen_quantifier": {
+      "n": 15,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    }
+  },
+  "LE-aligned": {
+    "arg_swap": {
+      "n": 494,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "negation_drop": {
+      "n": 132,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "restrictor_drop": {
+      "n": 231,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "random_substitution": {
+      "n": 638,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "flip_outer_quantifier": {
+      "n": 355,
+      "rate": 0.0,
+      "n_ties": 355,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "strengthen_quantifier": {
+      "n": 15,
+      "rate": 0.0,
+      "n_ties": 15,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    }
+  },
+  "Brunello-LT-aligned": {
+    "arg_swap": {
+      "n": 494,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "negation_drop": {
+      "n": 132,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "restrictor_drop": {
+      "n": 231,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "random_substitution": {
+      "n": 638,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "flip_outer_quantifier": {
+      "n": 355,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "strengthen_quantifier": {
+      "n": 15,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    }
+  },
+  "SIV-strict-recall": {
+    "arg_swap": {
+      "n": 494,
+      "rate": 0.998,
+      "n_ties": 1,
+      "ci_lo": 0.9939,
+      "ci_hi": 1.0
+    },
+    "negation_drop": {
+      "n": 132,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "restrictor_drop": {
+      "n": 231,
+      "rate": 0.0,
+      "n_ties": 231,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "random_substitution": {
+      "n": 638,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "flip_outer_quantifier": {
+      "n": 355,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "strengthen_quantifier": {
+      "n": 15,
+      "rate": 0.0,
+      "n_ties": 15,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    }
+  },
+  "SIV-strict-F1": {
+    "arg_swap": {
+      "n": 494,
+      "rate": 0.998,
+      "n_ties": 1,
+      "ci_lo": 0.9939,
+      "ci_hi": 1.0
+    },
+    "negation_drop": {
+      "n": 132,
+      "rate": 0.9924,
+      "n_ties": 0,
+      "ci_lo": 0.9773,
+      "ci_hi": 1.0
+    },
+    "restrictor_drop": {
+      "n": 231,
+      "rate": 0.9957,
+      "n_ties": 1,
+      "ci_lo": 0.987,
+      "ci_hi": 1.0
+    },
+    "random_substitution": {
+      "n": 638,
+      "rate": 0.9984,
+      "n_ties": 1,
+      "ci_lo": 0.9953,
+      "ci_hi": 1.0
+    },
+    "flip_outer_quantifier": {
+      "n": 355,
+      "rate": 0.9972,
+      "n_ties": 1,
+      "ci_lo": 0.9915,
+      "ci_hi": 1.0
+    },
+    "strengthen_quantifier": {
+      "n": 15,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    }
+  },
+  "SIV-soft-recall": {
+    "arg_swap": {
+      "n": 494,
+      "rate": 0.998,
+      "n_ties": 1,
+      "ci_lo": 0.9939,
+      "ci_hi": 1.0
+    },
+    "negation_drop": {
+      "n": 132,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "restrictor_drop": {
+      "n": 231,
+      "rate": 0.0,
+      "n_ties": 231,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    },
+    "random_substitution": {
+      "n": 638,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "flip_outer_quantifier": {
+      "n": 355,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    },
+    "strengthen_quantifier": {
+      "n": 15,
+      "rate": 0.0,
+      "n_ties": 15,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    }
+  },
+  "SIV-soft-F1": {
+    "arg_swap": {
+      "n": 494,
+      "rate": 0.998,
+      "n_ties": 1,
+      "ci_lo": 0.9939,
+      "ci_hi": 1.0
+    },
+    "negation_drop": {
+      "n": 132,
+      "rate": 0.9924,
+      "n_ties": 0,
+      "ci_lo": 0.9773,
+      "ci_hi": 1.0
+    },
+    "restrictor_drop": {
+      "n": 231,
+      "rate": 0.9957,
+      "n_ties": 1,
+      "ci_lo": 0.987,
+      "ci_hi": 1.0
+    },
+    "random_substitution": {
+      "n": 638,
+      "rate": 0.9984,
+      "n_ties": 1,
+      "ci_lo": 0.9953,
+      "ci_hi": 1.0
+    },
+    "flip_outer_quantifier": {
+      "n": 355,
+      "rate": 0.9972,
+      "n_ties": 1,
+      "ci_lo": 0.9915,
+      "ci_hi": 1.0
+    },
+    "strengthen_quantifier": {
+      "n": 15,
+      "rate": 1.0,
+      "n_ties": 0,
+      "ci_lo": 1.0,
+      "ci_hi": 1.0
+    }
+  }
+}

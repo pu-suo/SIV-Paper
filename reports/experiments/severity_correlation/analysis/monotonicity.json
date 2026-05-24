@@ -1,0 +1,119 @@
+{
+  "siv_soft_recall": {
+    "tier_order": [
+      "gold",
+      "overstrong",
+      "partial",
+      "overweak"
+    ],
+    "means": [
+      1.0,
+      0.9655,
+      0.324,
+      0.0355
+    ],
+    "strictly_decreasing": true,
+    "weakly_decreasing": true,
+    "inversions": []
+  },
+  "siv_soft_f1": {
+    "tier_order": [
+      "gold",
+      "overstrong",
+      "partial",
+      "overweak"
+    ],
+    "means": [
+      1.0,
+      0.9289,
+      0.442,
+      0.0523
+    ],
+    "strictly_decreasing": true,
+    "weakly_decreasing": true,
+    "inversions": []
+  },
+  "propositional_le_aligned": {
+    "tier_order": [
+      "gold",
+      "overstrong",
+      "partial",
+      "overweak"
+    ],
+    "means": [
+      1.0,
+      0.8502,
+      0.7963,
+      0.7131
+    ],
+    "strictly_decreasing": true,
+    "weakly_decreasing": true,
+    "inversions": []
+  },
+  "smatchpp": {
+    "tier_order": [
+      "gold",
+      "overstrong",
+      "partial",
+      "overweak"
+    ],
+    "means": [
+      1.0,
+      0.806,
+      0.6287,
+      0.7399
+    ],
+    "strictly_decreasing": false,
+    "weakly_decreasing": false,
+    "inversions": [
+      [
+        "partial",
+        "overweak"
+      ]
+    ]
+  },
+  "bleu": {
+    "tier_order": [
+      "gold",
+      "overstrong",
+      "partial",
+      "overweak"
+    ],
+    "means": [
+      0.4848,
+      0.3955,
+      0.3152,
+      0.3974
+    ],
+    "strictly_decreasing": false,
+    "weakly_decreasing": false,
+    "inversions": [
+      [
+        "partial",
+        "overweak"
+      ]
+    ]
+  },
+  "bertscore": {
+    "tier_order": [
+      "gold",
+      "overstrong",
+      "partial",
+      "overweak"
+    ],
+    "means": [
+      0.8723,
+      0.8153,
+      0.7285,
+      0.8219
+    ],
+    "strictly_decreasing": false,
+    "weakly_decreasing": false,
+    "inversions": [
+      [
+        "partial",
+        "overweak"
+      ]
+    ]
+  }
+}

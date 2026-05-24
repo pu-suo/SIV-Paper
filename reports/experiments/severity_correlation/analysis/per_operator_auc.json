@@ -1,0 +1,114 @@
+{
+  "OS_add_nucleus_conjunct": {
+    "siv_soft_recall": 0.5,
+    "siv_soft_f1": 0.5,
+    "propositional_le_aligned": 1.0,
+    "smatchpp": 1.0,
+    "bleu": 0.8458,
+    "bertscore": 0.866
+  },
+  "OS_strengthen_quantifier": {
+    "siv_soft_recall": 0.5,
+    "siv_soft_f1": 1.0,
+    "propositional_le_aligned": 0.5,
+    "smatchpp": 1.0,
+    "bleu": 0.419,
+    "bertscore": 0.7619
+  },
+  "OS_narrow_consequent": {
+    "siv_soft_recall": 0.5,
+    "siv_soft_f1": 0.5,
+    "propositional_le_aligned": 1.0,
+    "smatchpp": 1.0,
+    "bleu": 0.7119,
+    "bertscore": 0.8738
+  },
+  "OS_strengthen_predicate": {
+    "siv_soft_recall": 0.8333,
+    "siv_soft_f1": 0.8333,
+    "propositional_le_aligned": 0.5,
+    "smatchpp": 1.0,
+    "bleu": 0.7556,
+    "bertscore": 0.7317
+  },
+  "OS_drop_conjunctive_restrictor": {
+    "siv_soft_recall": 0.5,
+    "siv_soft_f1": 1.0,
+    "propositional_le_aligned": 1.0,
+    "smatchpp": 1.0,
+    "bleu": 0.494,
+    "bertscore": 0.925
+  },
+  "P_drop_conjunct": {
+    "siv_soft_recall": 1.0,
+    "siv_soft_f1": 1.0,
+    "propositional_le_aligned": 1.0,
+    "smatchpp": 1.0,
+    "bleu": 0.9392,
+    "bertscore": 0.9693
+  },
+  "P_weaken_predicate": {
+    "siv_soft_recall": 0.9167,
+    "siv_soft_f1": 0.9167,
+    "propositional_le_aligned": 0.8333,
+    "smatchpp": 1.0,
+    "bleu": 0.6667,
+    "bertscore": 0.8603
+  },
+  "P_drop_disjunctive_restrictor": {
+    "siv_soft_recall": 1.0,
+    "siv_soft_f1": 1.0,
+    "propositional_le_aligned": 1.0,
+    "smatchpp": 1.0,
+    "bleu": 0.3524,
+    "bertscore": 0.9619
+  },
+  "OW_drop_consequent_severely": {
+    "siv_soft_recall": 1.0,
+    "siv_soft_f1": 1.0,
+    "propositional_le_aligned": 1.0,
+    "smatchpp": 1.0,
+    "bleu": 0.9751,
+    "bertscore": 0.9937
+  },
+  "OW_weaken_predicate_severely": {
+    "siv_soft_recall": 1.0,
+    "siv_soft_f1": 1.0,
+    "propositional_le_aligned": 1.0,
+    "smatchpp": 1.0,
+    "bleu": 0.5429,
+    "bertscore": 0.9302
+  },
+  "OW_de_quantify_to_c0": {
+    "siv_soft_recall": 1.0,
+    "siv_soft_f1": 1.0,
+    "propositional_le_aligned": 1.0,
+    "smatchpp": 1.0,
+    "bleu": 0.9806,
+    "bertscore": 0.8502
+  },
+  "OW_flip_outer_quantifier": {
+    "siv_soft_recall": 1.0,
+    "siv_soft_f1": 1.0,
+    "propositional_le_aligned": 0.5,
+    "smatchpp": 1.0,
+    "bleu": 0.386,
+    "bertscore": 0.6811
+  },
+  "OW_weaken_to_existential": {
+    "siv_soft_recall": 1.0,
+    "siv_soft_f1": 1.0,
+    "propositional_le_aligned": 1.0,
+    "smatchpp": 1.0,
+    "bleu": 0.3619,
+    "bertscore": 0.7332
+  },
+  "OW_overrestrict_antecedent": {
+    "siv_soft_recall": 1.0,
+    "siv_soft_f1": 1.0,
+    "propositional_le_aligned": 1.0,
+    "smatchpp": 1.0,
+    "bleu": 0.8487,
+    "bertscore": 0.8184
+  }
+}

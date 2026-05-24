@@ -1,0 +1,7 @@
+{
+  "vampire_timeout_s": 5,
+  "n_premises_compiled": 640,
+  "n_rows_rescored": 1865,
+  "total_added_swap_binary_args": 336,
+  "suite_compile_seconds": 307.9
+}

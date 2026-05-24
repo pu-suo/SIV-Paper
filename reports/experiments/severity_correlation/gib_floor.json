@@ -1,0 +1,500 @@
+{
+  "n_pairs": 30,
+  "seed": 42,
+  "metric_means": {
+    "siv_soft_recall": {
+      "mean": 0.0817,
+      "std": 0.2561,
+      "min": 0.0,
+      "max": 1.0,
+      "n": 30
+    },
+    "siv_soft_f1": {
+      "mean": 0.0911,
+      "std": 0.2641,
+      "min": 0.0,
+      "max": 1.0,
+      "n": 30
+    },
+    "propositional_le_aligned": {
+      "mean": 0.582,
+      "std": 0.148,
+      "min": 0.2812,
+      "max": 0.8828,
+      "n": 30
+    },
+    "smatchpp": {
+      "mean": 0.2791,
+      "std": 0.204,
+      "min": 0.0364,
+      "max": 0.6667,
+      "n": 30
+    },
+    "bleu": {
+      "mean": 0.0626,
+      "std": 0.0594,
+      "min": 0.0027,
+      "max": 0.246,
+      "n": 30
+    },
+    "bertscore": {
+      "mean": 0.5794,
+      "std": 0.0774,
+      "min": 0.4335,
+      "max": 0.7012,
+      "n": 30
+    }
+  },
+  "rows": [
+    {
+      "gold_premise_id": "P0902",
+      "candidate_premise_id": "P0317",
+      "gold_fol": "American(donaldErvinKnuth) \u2227 ComputerScientist(donaldErvinKnuth) \u2227 Mathematician(donaldErvinKnuth) \u2227 ProfessorEmeritusAt(donaldErvinKnuth, stanford)",
+      "candidate_fol": "Won(china, theMostGoldMedals)",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.07690000000000001,
+        "bleu": 0.0088,
+        "bertscore": 0.4694
+      }
+    },
+    {
+      "gold_premise_id": "P0535",
+      "candidate_premise_id": "P0362",
+      "gold_fol": "Movie(endGame) \u2227 Released(endGame, yr2006)",
+      "candidate_fol": "Country(indonesia)",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.125,
+        "bleu": 0.033,
+        "bertscore": 0.5264
+      }
+    },
+    {
+      "gold_premise_id": "P0155",
+      "candidate_premise_id": "P0735",
+      "gold_fol": "\u2200x (Toddler(x) \u2192 Kid(x))",
+      "candidate_fol": "(-(Teacher(nancy)) -> -(OnPayroll(nancy)))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.625,
+        "smatchpp": 0.16670000000000001,
+        "bleu": 0.0565,
+        "bertscore": 0.6439
+      }
+    },
+    {
+      "gold_premise_id": "P1065",
+      "candidate_premise_id": "P0153",
+      "gold_fol": "Treats(diethylcarbamazine, riverBlindness)",
+      "candidate_fol": "-(((ProfessionalBasketballPlayer(jim) & -(NeverExercises(jim))) | (-(ProfessionalBasketballPlayer(jim)) & NeverExercises(jim))))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.0588,
+        "bleu": 0.0129,
+        "bertscore": 0.4472
+      }
+    },
+    {
+      "gold_premise_id": "P0258",
+      "candidate_premise_id": "P1342",
+      "gold_fol": "\u2200x ((In(x, yaleSVarsityTeam) \u2227 GoodAt(x, threes)) \u2192 GoodAt(x, twos))",
+      "candidate_fol": "all x.(Uncomfortable(x) -> -(Happy(x)))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.6875,
+        "smatchpp": 0.4242,
+        "bleu": 0.0631,
+        "bertscore": 0.5879
+      }
+    },
+    {
+      "gold_premise_id": "P0412",
+      "candidate_premise_id": "P0709",
+      "gold_fol": "\u2200x (Platypuses(x) \u2192 \u00acHyrax(x))",
+      "candidate_fol": "all x.(ProfessionalCenterback(x) -> ProfessionalSoccerDefender(x))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.625,
+        "smatchpp": 0.6364,
+        "bleu": 0.246,
+        "bertscore": 0.6954
+      }
+    },
+    {
+      "gold_premise_id": "P0971",
+      "candidate_premise_id": "P0919",
+      "gold_fol": "\u2200x (Fruit(x) \u2192 Edible(x))",
+      "candidate_fol": "all x.(Sells(quiksilver, x) -> (Sportswear(x) | Clothing(x) | Footwear(x) | Accessory(x)))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.734375,
+        "smatchpp": 0.3636,
+        "bleu": 0.1019,
+        "bertscore": 0.6993
+      }
+    },
+    {
+      "gold_premise_id": "P0675",
+      "candidate_premise_id": "P0612",
+      "gold_fol": "\u2200x (Small(x) \u2227 In(x, sizeTown) \u2192 Light(x))",
+      "candidate_fol": "all x.(Kitten(x) -> CuteAnimal(x))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.6875,
+        "smatchpp": 0.5185,
+        "bleu": 0.1941,
+        "bertscore": 0.7012
+      }
+    },
+    {
+      "gold_premise_id": "P0983",
+      "candidate_premise_id": "P0138",
+      "gold_fol": "VolleyballPlayer(maya)",
+      "candidate_fol": "all x.((exists y.(exists z.((-(x = y) & -(x = z) & -(y = z) & Enjoy(x, celebratingLifeMileStoneEvent, y) & Enjoy(x, celebratingLifeStoneEvent, z)))) -> Attend(x, wedding)))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.0364,
+        "bleu": 0.0066,
+        "bertscore": 0.4335
+      }
+    },
+    {
+      "gold_premise_id": "P0911",
+      "candidate_premise_id": "P0935",
+      "gold_fol": "\u2203x (BuiltBy(x, carrozzeriaColli) \u2227 RacingCar(x) \u2227 Used(x, fiat1100mechanicals) \u2227 Used(x, chassis))",
+      "candidate_fol": "all x.(WorkIn(x, office) -> Commuter(x))",
+      "scores": {
+        "siv_soft_recall": 0.2,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.33333333333333337,
+        "propositional_le_aligned": 0.28125,
+        "smatchpp": 0.3333,
+        "bleu": 0.0901,
+        "bertscore": 0.6214
+      }
+    },
+    {
+      "gold_premise_id": "P0509",
+      "candidate_premise_id": "P1068",
+      "gold_fol": "(Can(john, getTheRhythmRight) \u2227 Can(john, getTheRhythmRight)) \u2227  Become(john, goodAtCoordination)  \u2192 PutEmotionInto(john, hisPlaying)",
+      "candidate_fol": "all x.(PrimeNumber(x) -> NaturalNumber(x))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.6875,
+        "smatchpp": 0.10529999999999999,
+        "bleu": 0.0272,
+        "bertscore": 0.559
+      }
+    },
+    {
+      "gold_premise_id": "P1097",
+      "candidate_premise_id": "P0441",
+      "gold_fol": "\u00ac((Hardworking(john) \u2227 HaveFor(john, highAmbition, future) \u2227 HaveFor(john, goal, future)) \u2295 FlexibleSchedule(john))",
+      "candidate_fol": "all x.(Chef(x) -> Can(x, cook))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.0541,
+        "bleu": 0.0259,
+        "bertscore": 0.5716
+      }
+    },
+    {
+      "gold_premise_id": "P1510",
+      "candidate_premise_id": "P0413",
+      "gold_fol": "ProfessionalTennisPlayer(rafaNadal)",
+      "candidate_fol": "all x.(Echidnas(x) -> -(Hyrax(x)))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.125,
+        "bleu": 0.0255,
+        "bertscore": 0.5522
+      }
+    },
+    {
+      "gold_premise_id": "P0220",
+      "candidate_premise_id": "P0831",
+      "gold_fol": "\u2200x (Endothermic(x) \u2192 ProduceWithIn(x, heat, body))",
+      "candidate_fol": "all x.(Husky(x) -> Dog(x))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.625,
+        "smatchpp": 0.6667000000000001,
+        "bleu": 0.1391,
+        "bertscore": 0.6809
+      }
+    },
+    {
+      "gold_premise_id": "P0450",
+      "candidate_premise_id": "P0962",
+      "gold_fol": "\u2203x (Develop(eTS, x) \u2227 StateWideAssesment(x) \u2227 UsedFor(x, accountabilityTesting))",
+      "candidate_fol": "BornIn1965(ralphHammerthaler)",
+      "scores": {
+        "siv_soft_recall": 0.25,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.4,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.087,
+        "bleu": 0.0027,
+        "bertscore": 0.4987
+      }
+    },
+    {
+      "gold_premise_id": "P0627",
+      "candidate_premise_id": "P0210",
+      "gold_fol": "\u2200x (InThisMidwestTown(x) \u2227 Have(x, disposableIncome) \u2192 Have(x, horseRank))",
+      "candidate_fol": "all x.(In(x, newHaven) -> -(High(x)))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.6875,
+        "smatchpp": 0.48479999999999995,
+        "bleu": 0.1434,
+        "bertscore": 0.6689
+      }
+    },
+    {
+      "gold_premise_id": "P0236",
+      "candidate_premise_id": "P1437",
+      "gold_fol": "Built(pierredeRigauddeVaudreuil, fortCarillon)",
+      "candidate_fol": "all x.(Scare(x) -> Surprise(x))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.125,
+        "bleu": 0.0313,
+        "bertscore": 0.4914
+      }
+    },
+    {
+      "gold_premise_id": "P1289",
+      "candidate_premise_id": "P0217",
+      "gold_fol": "PublishedBy(thickAsTheives, greenWillowBooks)",
+      "candidate_fol": "all x.(Bird(x) -> -(Ectothermic(x)))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.11109999999999999,
+        "bleu": 0.0255,
+        "bertscore": 0.5431
+      }
+    },
+    {
+      "gold_premise_id": "P1114",
+      "candidate_premise_id": "P0164",
+      "gold_fol": "\u2200x (Cutman(x) \u2192 Prevent(x, physicalDamageToAFighter) \u2227 Treat(x, physicalDamageToAFighter))",
+      "candidate_fol": "From(lanaWilson, kirkland)",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.16,
+        "bleu": 0.0088,
+        "bertscore": 0.4826
+      }
+    },
+    {
+      "gold_premise_id": "P1011",
+      "candidate_premise_id": "P0058",
+      "gold_fol": "Produce(whiteTown, yourWoman) \u2227 OnePersonBand(whiteTown)",
+      "candidate_fol": "all x.(Outside(x, solarSystem) -> -(SunAs(x, star)))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.375,
+        "smatchpp": 0.2143,
+        "bleu": 0.0258,
+        "bertscore": 0.587
+      }
+    },
+    {
+      "gold_premise_id": "P1383",
+      "candidate_premise_id": "P1468",
+      "gold_fol": "\u2200x ((LeetcodeProblems(x) \u2227 Hard(x)) \u2192 StarredByMoreThan(x, num1000))",
+      "candidate_fol": "all x.((NationalPark(x) & Locatedin(x, vietnam)) -> ((Mangedby(x, ministryofAgriculture) & -(Managedby(x, peoplesCommittee))) | (-(Mangedby(x, ministryofAgriculture)) & Managedby(x, peoplesCommittee))))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.78125,
+        "smatchpp": 0.3934,
+        "bleu": 0.0566,
+        "bertscore": 0.604
+      }
+    },
+    {
+      "gold_premise_id": "P0145",
+      "candidate_premise_id": "P0984",
+      "gold_fol": "\u2200x ((Lipstick(x) \u2227 In(x, rougeDiorSet) \u2227 In(x, lunarNewYearLimitedEdition)) \u2192 (RosewoodInDescription(x) \u2295 \u00acRosewoodInDescription(x)))",
+      "candidate_fol": "all x.((Devices(x) & With(x, companyLogo)) -> BelongTo(x, company))",
+      "scores": {
+        "siv_soft_recall": 1.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 1.0,
+        "propositional_le_aligned": 0.875,
+        "smatchpp": 0.40619999999999995,
+        "bleu": 0.1108,
+        "bertscore": 0.6241
+      }
+    },
+    {
+      "gold_premise_id": "P0402",
+      "candidate_premise_id": "P0113",
+      "gold_fol": "\u2203x (InBenjiSFamily(x) \u2192 (LikeEating(x, cheese) \u2228 Francophile(x)))",
+      "candidate_fol": "all x.((At(x, businessConference) & Enjoy(x, stateOwnershipOfMeansOfProduction)) -> Prefer(x, plannedEconomy))",
+      "scores": {
+        "siv_soft_recall": 1.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 1.0,
+        "propositional_le_aligned": 0.78125,
+        "smatchpp": 0.45,
+        "bleu": 0.0962,
+        "bertscore": 0.6425
+      }
+    },
+    {
+      "gold_premise_id": "P1180",
+      "candidate_premise_id": "P0625",
+      "gold_fol": "\u2200x \u2200y \u2200z \u2200w (\u00ac(x=y) \u2227 WonCup(x, z) \u2227 WonCup(y, w) \u2192 \u00ac(z=w))",
+      "candidate_fol": "all x.(all y.((HandbrakeOf(x, y) & Parked(y) & Car(y)) -> Down(x)))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.8828125,
+        "smatchpp": 0.4918,
+        "bleu": 0.0797,
+        "bertscore": 0.6006
+      }
+    },
+    {
+      "gold_premise_id": "P0068",
+      "candidate_premise_id": "P1135",
+      "gold_fol": "\u2200x (Song(x) \u2227 Play(sam, x) \u2192 Titled(x, perfect))",
+      "candidate_fol": "(Archeologist(johnEvans) & Popularize(johnEvans, termPalstave))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.3125,
+        "smatchpp": 0.3226,
+        "bleu": 0.0457,
+        "bertscore": 0.6219
+      }
+    },
+    {
+      "gold_premise_id": "P0628",
+      "candidate_premise_id": "P0241",
+      "gold_fol": "\u2200x (InThisMidwestTown(x) \u2227 CompeteIn(x, horseDressageShow) \u2192 Have(x, disposableIncome))",
+      "candidate_fol": "all x.(ProfessionalCenterback(x) -> ProfessionalSoccerDefender(x))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.6875,
+        "smatchpp": 0.4828,
+        "bleu": 0.1026,
+        "bertscore": 0.6421
+      }
+    },
+    {
+      "gold_premise_id": "P1125",
+      "candidate_premise_id": "P0464",
+      "gold_fol": "\u2200x (GrandSlamUmpire(x) \u2192 ProfessionalTennisUmpire(x))",
+      "candidate_fol": "((Demolished(islip) & -(StillUsed(islip))) | (-(Demolished(islip)) & StillUsed(islip)))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.11109999999999999,
+        "bleu": 0.0316,
+        "bertscore": 0.5498
+      }
+    },
+    {
+      "gold_premise_id": "P0154",
+      "candidate_premise_id": "P0225",
+      "gold_fol": "\u2200x (Kid(x) \u2192 Young(x))",
+      "candidate_fol": "all x.(KnownSpeciesOf(x, ambiortus) -> IsSpecies(x, ambiortusDementjevi))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.625,
+        "smatchpp": 0.6667000000000001,
+        "bleu": 0.0754,
+        "bertscore": 0.6255
+      }
+    },
+    {
+      "gold_premise_id": "P0248",
+      "candidate_premise_id": "P1473",
+      "gold_fol": "ScifiMovie(inception)",
+      "candidate_fol": "all x.(exists y.(exists z.((Coursing(x) -> (Hare(y) & BetOn(spectators, y, x) & GreyHound(z) & PursuedBy(y, z))))))",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.0513,
+        "bleu": 0.0087,
+        "bertscore": 0.4989
+      }
+    },
+    {
+      "gold_premise_id": "P0276",
+      "candidate_premise_id": "P0872",
+      "gold_fol": "Cat(garfield) \u2227 MainCharacterOf(garfield, filmGarfield) \u2227 Orange(garfield) \u2227 Fat(garfield) \u2227 Like(garfield, lasagna)",
+      "candidate_fol": "In(northYorkshire, england)",
+      "scores": {
+        "siv_soft_recall": 0.0,
+        "siv_soft_precision": 1.0,
+        "siv_soft_f1": 0.0,
+        "propositional_le_aligned": 0.5,
+        "smatchpp": 0.125,
+        "bleu": 0.0027,
+        "bertscore": 0.5111
+      }
+    }
+  ]
+}

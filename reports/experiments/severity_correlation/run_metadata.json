@@ -1,0 +1,169 @@
+{
+  "step1": {
+    "max_per_stratum": 30,
+    "seed": 42,
+    "folio_totals_by_stratum": {
+      "1": 549,
+      "2": 107,
+      "3": 256,
+      "4": 8,
+      "5": 473
+    },
+    "sampled_by_stratum": {
+      "1": 30,
+      "2": 30,
+      "3": 30,
+      "4": 8,
+      "5": 30
+    },
+    "parse_fail": 0,
+    "no_canonical": 0
+  },
+  "step2": {
+    "n_attempted": 1920,
+    "n_applies_to": 547,
+    "n_generated": 547,
+    "n_not_applicable": 0,
+    "n_parse_fail": 0,
+    "n_reparse_fail": 0,
+    "per_op_generated": {
+      "OS_add_nucleus_conjunct": 121,
+      "P_drop_conjunct": 18,
+      "OW_drop_consequent_severely": 18,
+      "OS_strengthen_predicate": 6,
+      "P_weaken_predicate": 10,
+      "OW_weaken_predicate_severely": 3,
+      "OW_de_quantify_to_c0": 98,
+      "OW_flip_outer_quantifier": 89,
+      "OW_weaken_to_existential": 79,
+      "OW_overrestrict_antecedent": 79,
+      "P_drop_disjunctive_restrictor": 1,
+      "OS_drop_conjunctive_restrictor": 18,
+      "OS_strengthen_quantifier": 3,
+      "OS_narrow_consequent": 4
+    },
+    "per_op_applies": {
+      "OS_add_nucleus_conjunct": 121,
+      "P_drop_conjunct": 18,
+      "OW_drop_consequent_severely": 18,
+      "OS_strengthen_predicate": 6,
+      "P_weaken_predicate": 10,
+      "OW_weaken_predicate_severely": 3,
+      "OW_de_quantify_to_c0": 98,
+      "OW_flip_outer_quantifier": 89,
+      "OW_weaken_to_existential": 79,
+      "OW_overrestrict_antecedent": 79,
+      "P_drop_disjunctive_restrictor": 1,
+      "OS_drop_conjunctive_restrictor": 18,
+      "OS_strengthen_quantifier": 3,
+      "OS_narrow_consequent": 4
+    }
+  },
+  "step3": {
+    "n_verified": 547,
+    "n_kept": 529,
+    "n_dropped": 18,
+    "wall_time_s": 9.9,
+    "drop_reasons": {
+      "actual=gold_entails_cand, expected=cand_entails_gold": 3,
+      "actual=cand_entails_gold, expected=gold_entails_cand": 11,
+      "actual=incompatible, expected=gold_entails_cand": 2,
+      "actual=equivalent, expected=gold_entails_cand": 2
+    },
+    "vampire_timeout": 5
+  },
+  "step4": {
+    "n_candidates": 267,
+    "by_tier": {
+      "overstrong": 58,
+      "partial": 25,
+      "overweak": 184
+    },
+    "by_operator": {
+      "OS_add_nucleus_conjunct": 40,
+      "OS_strengthen_quantifier": 3,
+      "OS_narrow_consequent": 4,
+      "OS_strengthen_predicate": 3,
+      "OS_drop_conjunctive_restrictor": 8,
+      "P_drop_conjunct": 18,
+      "P_weaken_predicate": 6,
+      "P_drop_disjunctive_restrictor": 1,
+      "OW_drop_consequent_severely": 18,
+      "OW_weaken_predicate_severely": 3,
+      "OW_de_quantify_to_c0": 31,
+      "OW_flip_outer_quantifier": 31,
+      "OW_weaken_to_existential": 56,
+      "OW_overrestrict_antecedent": 45
+    },
+    "by_stratum": {
+      "1": 38,
+      "2": 81,
+      "3": 47,
+      "4": 26,
+      "5": 75
+    },
+    "seed": 42
+  },
+  "step6": {
+    "n_candidates_scored": 267,
+    "n_scoring_failed": 0,
+    "n_gold_rows": 105,
+    "n_total_rows": 372,
+    "wall_time_s": 296.3,
+    "metrics_scored": [
+      "siv_soft_recall",
+      "siv_soft_f1",
+      "propositional_le_aligned",
+      "smatchpp",
+      "bleu",
+      "bertscore"
+    ]
+  },
+  "step7": {
+    "analysis_dir": "reports/experiments/severity_correlation/analysis",
+    "metrics": [
+      "siv_soft_recall",
+      "siv_soft_f1",
+      "propositional_le_aligned",
+      "smatchpp",
+      "bleu",
+      "bertscore"
+    ],
+    "primary_headline_eta_squared_3level": {
+      "siv_soft_recall": 0.8753192253138671,
+      "siv_soft_f1": 0.8017378873949652,
+      "propositional_le_aligned": 0.0747385580265392,
+      "smatchpp": 0.07224079186263933,
+      "bleu": 0.02709683514175875,
+      "bertscore": 0.16969291846791829
+    },
+    "primary_headline_cohens_d_ref_vs_ow": {
+      "siv_soft_recall": 7.2637068559706925,
+      "siv_soft_f1": 4.714788139212674,
+      "propositional_le_aligned": 1.4992170802366818,
+      "smatchpp": 1.8417743788556356,
+      "bleu": 1.0887983464709001,
+      "bertscore": 1.3460073532450059
+    },
+    "tertiary_aggregate_rho": {
+      "siv_soft_recall": 0.8095,
+      "siv_soft_f1": 0.8387,
+      "propositional_le_aligned": 0.828,
+      "smatchpp": 0.8813,
+      "bleu": 0.4121,
+      "bertscore": 0.7153
+    }
+  },
+  "gib_floor": {
+    "n_pairs": 30,
+    "seed": 42,
+    "means": {
+      "siv_soft_recall": 0.0817,
+      "siv_soft_f1": 0.0911,
+      "propositional_le_aligned": 0.582,
+      "smatchpp": 0.2791,
+      "bleu": 0.0626,
+      "bertscore": 0.5794
+    }
+  }
+}

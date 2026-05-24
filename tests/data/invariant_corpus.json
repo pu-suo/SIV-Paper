@@ -1,0 +1,267 @@
+[
+  {
+    "sentence": "Every student admires some teacher.",
+    "pattern": "nested_universal_over_existential_different_scopes",
+    "extraction": {
+      "nl": "Every student admires some teacher.",
+      "predicates": [
+        {"name": "Student", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Teacher", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Admires", "arity": 2, "arg_types": ["entity", "entity"]}
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal",
+          "variable": "x",
+          "var_type": "entity",
+          "restrictor": [{"pred": "Student", "args": ["x"], "negated": false}],
+          "nucleus": {
+            "atomic": null,
+            "quantification": {
+              "quantifier": "existential",
+              "variable": "y",
+              "var_type": "entity",
+              "restrictor": [{"pred": "Teacher", "args": ["y"], "negated": false}],
+              "nucleus": {
+                "atomic": {"pred": "Admires", "args": ["x", "y"], "negated": false},
+                "quantification": null, "negation": null, "connective": null, "operands": null
+              },
+              "inner_quantifications": []
+            },
+            "negation": null, "connective": null, "operands": null
+          },
+          "inner_quantifications": []
+        },
+        "negation": null, "connective": null, "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "If it rains, then every employee is either remote or in-person.",
+    "pattern": "connective_with_quantification_with_connective_nucleus",
+    "extraction": {
+      "nl": "If it rains, then every employee is either remote or in-person.",
+      "predicates": [
+        {"name": "Rains", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Employee", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Remote", "arity": 1, "arg_types": ["entity"]},
+        {"name": "InPerson", "arity": 1, "arg_types": ["entity"]}
+      ],
+      "entities": [],
+      "constants": [{"id": "weather", "surface": "weather", "type": "entity"}],
+      "formula": {
+        "atomic": null, "quantification": null, "negation": null,
+        "connective": "implies",
+        "operands": [
+          {"atomic": {"pred": "Rains", "args": ["weather"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null},
+          {
+            "atomic": null,
+            "quantification": {
+              "quantifier": "universal",
+              "variable": "x",
+              "var_type": "entity",
+              "restrictor": [{"pred": "Employee", "args": ["x"], "negated": false}],
+              "nucleus": {
+                "atomic": null, "quantification": null, "negation": null,
+                "connective": "or",
+                "operands": [
+                  {"atomic": {"pred": "Remote", "args": ["x"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null},
+                  {"atomic": {"pred": "InPerson", "args": ["x"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null}
+                ]
+              },
+              "inner_quantifications": []
+            },
+            "negation": null, "connective": null, "operands": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "sentence": "Alice is tall, Bob is short, or Carol is medium.",
+    "pattern": "disjunction_with_three_operands",
+    "extraction": {
+      "nl": "Alice is tall, Bob is short, or Carol is medium.",
+      "predicates": [
+        {"name": "Tall", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Short", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Medium", "arity": 1, "arg_types": ["entity"]}
+      ],
+      "entities": [],
+      "constants": [
+        {"id": "alice", "surface": "Alice", "type": "entity"},
+        {"id": "bob", "surface": "Bob", "type": "entity"},
+        {"id": "carol", "surface": "Carol", "type": "entity"}
+      ],
+      "formula": {
+        "atomic": null, "quantification": null, "negation": null,
+        "connective": "or",
+        "operands": [
+          {"atomic": {"pred": "Tall", "args": ["alice"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null},
+          {"atomic": {"pred": "Short", "args": ["bob"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null},
+          {"atomic": {"pred": "Medium", "args": ["carol"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null}
+        ]
+      }
+    }
+  },
+  {
+    "sentence": "It is not the case that if Alice is tall then Bob is short.",
+    "pattern": "negation_of_implication",
+    "extraction": {
+      "nl": "It is not the case that if Alice is tall then Bob is short.",
+      "predicates": [
+        {"name": "Tall", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Short", "arity": 1, "arg_types": ["entity"]}
+      ],
+      "entities": [],
+      "constants": [
+        {"id": "alice", "surface": "Alice", "type": "entity"},
+        {"id": "bob", "surface": "Bob", "type": "entity"}
+      ],
+      "formula": {
+        "atomic": null, "quantification": null,
+        "negation": {
+          "atomic": null, "quantification": null, "negation": null,
+          "connective": "implies",
+          "operands": [
+            {"atomic": {"pred": "Tall", "args": ["alice"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null},
+            {"atomic": {"pred": "Short", "args": ["bob"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null}
+          ]
+        },
+        "connective": null, "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "Every dog barks if and only if every cat purrs.",
+    "pattern": "biconditional_between_two_quantifieds",
+    "extraction": {
+      "nl": "Every dog barks if and only if every cat purrs.",
+      "predicates": [
+        {"name": "Dog", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Barks", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Cat", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Purrs", "arity": 1, "arg_types": ["entity"]}
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null, "quantification": null, "negation": null,
+        "connective": "iff",
+        "operands": [
+          {
+            "atomic": null,
+            "quantification": {
+              "quantifier": "universal", "variable": "x", "var_type": "entity",
+              "restrictor": [{"pred": "Dog", "args": ["x"], "negated": false}],
+              "nucleus": {"atomic": {"pred": "Barks", "args": ["x"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null},
+              "inner_quantifications": []
+            },
+            "negation": null, "connective": null, "operands": null
+          },
+          {
+            "atomic": null,
+            "quantification": {
+              "quantifier": "universal", "variable": "y", "var_type": "entity",
+              "restrictor": [{"pred": "Cat", "args": ["y"], "negated": false}],
+              "nucleus": {"atomic": {"pred": "Purrs", "args": ["y"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null},
+              "inner_quantifications": []
+            },
+            "negation": null, "connective": null, "operands": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "sentence": "Paris is the capital of France.",
+    "pattern": "ground_atomic_two_constants",
+    "extraction": {
+      "nl": "Paris is the capital of France.",
+      "predicates": [
+        {"name": "CapitalOf", "arity": 2, "arg_types": ["entity", "entity"]}
+      ],
+      "entities": [],
+      "constants": [
+        {"id": "paris", "surface": "Paris", "type": "entity"},
+        {"id": "france", "surface": "France", "type": "entity"}
+      ],
+      "formula": {
+        "atomic": {"pred": "CapitalOf", "args": ["paris", "france"], "negated": false},
+        "quantification": null, "negation": null, "connective": null, "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "Every student either studies or works.",
+    "pattern": "universal_with_disjunctive_nucleus",
+    "extraction": {
+      "nl": "Every student either studies or works.",
+      "predicates": [
+        {"name": "Student", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Studies", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Works", "arity": 1, "arg_types": ["entity"]}
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal", "variable": "x", "var_type": "entity",
+          "restrictor": [{"pred": "Student", "args": ["x"], "negated": false}],
+          "nucleus": {
+            "atomic": null, "quantification": null, "negation": null,
+            "connective": "or",
+            "operands": [
+              {"atomic": {"pred": "Studies", "args": ["x"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null},
+              {"atomic": {"pred": "Works", "args": ["x"], "negated": false}, "quantification": null, "negation": null, "connective": null, "operands": null}
+            ]
+          },
+          "inner_quantifications": []
+        },
+        "negation": null, "connective": null, "operands": null
+      }
+    }
+  },
+  {
+    "sentence": "Every person who owns a dog that barks and bites is careful.",
+    "pattern": "universal_with_inner_existential_restrictor_containing_connective",
+    "extraction": {
+      "nl": "Every person who owns a dog that barks and bites is careful.",
+      "predicates": [
+        {"name": "Person", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Dog", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Owns", "arity": 2, "arg_types": ["entity", "entity"]},
+        {"name": "Barks", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Bites", "arity": 1, "arg_types": ["entity"]},
+        {"name": "Careful", "arity": 1, "arg_types": ["entity"]}
+      ],
+      "entities": [],
+      "constants": [],
+      "formula": {
+        "atomic": null,
+        "quantification": {
+          "quantifier": "universal", "variable": "x", "var_type": "entity",
+          "restrictor": [
+            {"pred": "Person", "args": ["x"], "negated": false},
+            {"pred": "Owns", "args": ["x", "y"], "negated": false},
+            {"pred": "Dog", "args": ["y"], "negated": false},
+            {"pred": "Barks", "args": ["y"], "negated": false},
+            {"pred": "Bites", "args": ["y"], "negated": false}
+          ],
+          "nucleus": {
+            "atomic": {"pred": "Careful", "args": ["x"], "negated": false},
+            "quantification": null, "negation": null, "connective": null, "operands": null
+          },
+          "inner_quantifications": [
+            {"quantifier": "existential", "variable": "y", "var_type": "entity"}
+          ]
+        },
+        "negation": null, "connective": null, "operands": null
+      }
+    }
+  }
+]

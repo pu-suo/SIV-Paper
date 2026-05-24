@@ -1,0 +1,310 @@
+{
+  "n_pairs": 1865,
+  "rule_classifier": {
+    "macro_f1_6class": 0.6380499997381718,
+    "unrecognized_n": 1,
+    "unrecognized_rate": 0.0005361930294906167,
+    "per_class": {
+      "arg_swap": {
+        "precision": 1.0,
+        "recall": 0.31781376518218624,
+        "f1": 0.4823348694316436,
+        "n": 494,
+        "recall_ci_95": [
+          0.27693803360159863,
+          0.3608867091000095
+        ]
+      },
+      "negation_drop": {
+        "precision": 1.0,
+        "recall": 0.6363636363636364,
+        "f1": 0.7777777777777778,
+        "n": 132,
+        "recall_ci_95": [
+          0.5481780226273242,
+          0.7182832950398164
+        ]
+      },
+      "restrictor_drop": {
+        "precision": 0.9956709956709957,
+        "recall": 0.9956709956709957,
+        "f1": 0.9956709956709957,
+        "n": 231,
+        "recall_ci_95": [
+          0.9761176554961027,
+          0.9998904051055943
+        ]
+      },
+      "random_substitution": {
+        "precision": 0.4636627906976744,
+        "recall": 1.0,
+        "f1": 0.6335650446871897,
+        "n": 638,
+        "recall_ci_95": [
+          0.9942347405433765,
+          1.0
+        ]
+      },
+      "flip_outer_quantifier": {
+        "precision": 1.0,
+        "recall": 0.0028169014084507044,
+        "f1": 0.0056179775280898875,
+        "n": 355,
+        "recall_ci_95": [
+          7.13152259182005e-05,
+          0.015594084531077891
+        ]
+      },
+      "strengthen_quantifier": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9333333333333333,
+        "f1": 0.9333333333333333,
+        "n": 15,
+        "recall_ci_95": [
+          0.6805154334216966,
+          0.9983135697586473
+        ]
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "arg_swap",
+        "negation_drop",
+        "restrictor_drop",
+        "random_substitution",
+        "flip_outer_quantifier",
+        "strengthen_quantifier",
+        "unrecognized"
+      ],
+      "matrix": [
+        [
+          157,
+          0,
+          0,
+          336,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          84,
+          0,
+          48,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          230,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          638,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          354,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          14,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "score_only_baseline": {
+    "macro_f1_6class": 0.3327076892749637,
+    "per_class": {
+      "arg_swap": {
+        "precision": 0.6872586872586872,
+        "recall": 0.3603238866396761,
+        "f1": 0.47277556440903057,
+        "n": 494,
+        "recall_ci_95": [
+          0.31792188359546986,
+          0.40440886116644853
+        ]
+      },
+      "negation_drop": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "n": 132,
+        "recall_ci_95": [
+          0.0,
+          0.027559177723457548
+        ]
+      },
+      "restrictor_drop": {
+        "precision": 0.8804780876494024,
+        "recall": 0.9567099567099567,
+        "f1": 0.91701244813278,
+        "n": 231,
+        "recall_ci_95": [
+          0.9218309359590084,
+          0.9790484591854469
+        ]
+      },
+      "random_substitution": {
+        "precision": 0.44717261904761907,
+        "recall": 0.9420062695924765,
+        "f1": 0.6064581231079718,
+        "n": 638,
+        "recall_ci_95": [
+          0.9209462240193003,
+          0.9588420527430896
+        ]
+      },
+      "flip_outer_quantifier": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "n": 355,
+        "recall_ci_95": [
+          0.0,
+          0.010337407627642929
+        ]
+      },
+      "strengthen_quantifier": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "n": 15,
+        "recall_ci_95": [
+          0.0,
+          0.218019360910534
+        ]
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "arg_swap",
+        "negation_drop",
+        "restrictor_drop",
+        "random_substitution",
+        "flip_outer_quantifier",
+        "strengthen_quantifier"
+      ],
+      "matrix": [
+        [
+          178,
+          3,
+          13,
+          300,
+          0,
+          0
+        ],
+        [
+          26,
+          0,
+          5,
+          100,
+          0,
+          1
+        ],
+        [
+          9,
+          1,
+          221,
+          0,
+          0,
+          0
+        ],
+        [
+          23,
+          5,
+          9,
+          601,
+          0,
+          0
+        ],
+        [
+          13,
+          0,
+          0,
+          342,
+          0,
+          0
+        ],
+        [
+          10,
+          1,
+          3,
+          1,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "recoverability_delta_macro_f1": 0.3053423104632081,
+  "phase6_firing_recall_sanity": {
+    "arg_swap": {
+      "n": 494,
+      "contrastive_predicted_fired_rate": 0.31983805668016196,
+      "positive_pattern_held_rate": 1.0,
+      "joint_pattern_held_rate": 0.31983805668016196
+    },
+    "negation_drop": {
+      "n": 132,
+      "contrastive_predicted_fired_rate": 0.6363636363636364,
+      "positive_pattern_held_rate": 1.0,
+      "joint_pattern_held_rate": 0.6363636363636364
+    },
+    "restrictor_drop": {
+      "n": 231,
+      "contrastive_predicted_fired_rate": 0.9956709956709957,
+      "positive_pattern_held_rate": 1.0,
+      "joint_pattern_held_rate": 0.9956709956709957
+    },
+    "random_substitution": {
+      "n": 638,
+      "contrastive_predicted_fired_rate": 1.0,
+      "positive_pattern_held_rate": 1.0,
+      "joint_pattern_held_rate": 1.0
+    },
+    "flip_outer_quantifier": {
+      "n": 355,
+      "contrastive_predicted_fired_rate": 0.0028169014084507044,
+      "positive_pattern_held_rate": 1.0,
+      "joint_pattern_held_rate": 0.0028169014084507044
+    },
+    "strengthen_quantifier": {
+      "n": 15,
+      "contrastive_predicted_fired_rate": 1.0,
+      "positive_pattern_held_rate": 1.0,
+      "joint_pattern_held_rate": 1.0
+    }
+  }
+}
